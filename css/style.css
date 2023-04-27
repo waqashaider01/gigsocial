@@ -452,6 +452,159 @@
 
 
 /* ***********LOG IN************** */
+
+
+.header {
+
+    background-color: #323643;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+.header span {
+
+
+    font-family: Avenir Heavy;
+    font-size: 18px;
+    color: #fff;
+    opacity: .8;
+    letter-spacing: -.09px;
+
+
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.signup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer {
+
+    padding-top: 3rem;
+    font-family: Avenir Roman;
+    margin-top: 5rem;
+    color: white;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323643;
+
+}
+
+.footer span {
+    margin-left: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex p {
+
+
+    margin-bottom: 0;
+
+    margin-left: 2rem !important;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.flex2 p {
+
+
+    color: #fff;
+    font-size: 18px;
+
+    margin-left: 2rem !important;
+
+}
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-links svg {
+    margin-left: 1rem !important;
+
+
+}
+
+@media(max-width:500px) {
+    .header {
+        background-color: #323643;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+}
+
+@media(max-width:400px) {
+    .display {
+        width: 150px !important;
+    }
+
+    .row2 {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .header {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+@media(max-width:500px) {
+    footer {
+        display: none;
+        ;
+    }
+}
+
+@media(max-width:750px) {
+
+    /* .logo svg{
+        width:5rem;
+        height:5rem;
+    } */
+    .header span {
+
+
+        font-family: Avenir Heavy;
+        font-size: 14px;
+        color: #fff;
+        opacity: .8;
+        letter-spacing: -.09px;
+
+    }
+}
+
+@media(max-width:970px) {
+    .none {
+        visibility: hidden;
+    }
+}
+
+
+/* ***********LOG IN************** */
 .phone_lookup_form_control {
     border-radius: 50px;
     border: 1px solid #dee2e6;
@@ -508,7 +661,7 @@
     background: #38B6FF;
     border-radius: 200px;
     color: white;
-    transition: all .5s ease 0s;
+    transition: all .3s ease 0s;
 }
 
 .c_nav a:nth-child(1) {
@@ -548,4 +701,97 @@
 .custom_nav a {
     color: rgb(0, 0, 0);
     transition: all 0.3 ease-in-out;
+}
+
+.c_width{
+    width: 350px;
+}
+
+
+
+
+input[type="text"] {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 200px;
+    height: 40px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    /* padding: 0 20px; */
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #38B6FF;
+    box-shadow: 0 0 5px 0 #38B6FF;
+}
+
+.inputWithIcon input[type="text"] {
+    padding-left: 40px;
+}
+
+.inputWithIcon {
+    position: relative;
+}
+
+.inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 19px;
+    padding: 9px 9px 8px 15px;
+    color: #38B6FF;
+    transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"]:focus+i {
+    color: #38B6FF;
+}
+
+.inputWithIcon.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus+i {
+    color: #fff;
+    background-color: #38B6FF;
+}
+
+
+
+
+
+input[type="password"] {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 200px;
+    height: 40px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    /* padding: 0 20px; */
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type="password"]:focus {
+    border-color: #38B6FF;
+    box-shadow: 0 0 5px 0 #38B6FF;
+}
+
+.inputWithIcon input[type="password"] {
+    padding-left: 40px;
+}
+
+.inputWithIcon input[type="password"]:focus+i {
+    color: #38B6FF;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus+i {
+    color: #fff;
+    background-color: #38B6FF;
 }
