@@ -27,12 +27,19 @@
 
         <div>
             <form id="lookup">
-                <p>Enter your phone number:</p>
-                <input id="phone" type="tel" name="phone">
-                <input type="submit" class="btn" value="Verify" />
-            </form>
-            <div class="alert alert-info" style="display: none;"></div>
-            <div class="alert alert-error" style="display: none;"></div>
+                <!-- <p>Enter your phone number:</p> -->
+                <div>
+                    <input id="phone" class="phone_lookup_form_control" type="tel" name="phone"
+                        placeholder="Phone Number">
+                    <input type="submit" class="btn" value="Verify" />
+                </div>
+
+                <div class="mb-3 password_lookup">
+                    <div class="password_lookup_bg"></div>
+                    <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
+                    <input type="password" class="form-control password_lookup_form_control" id="exampleInputPassword1"
+                        placeholder="Password">
+                </div>
         </div>
 
 
@@ -47,7 +54,7 @@
                     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
             });
 
-         
+
         </script>
 
         <!------ JS libraries ------>
@@ -58,7 +65,7 @@
             integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
             crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-       
+
         <!-------- own JS --------->
         <script src="js/sticky.js"></script>
         <script src="js/main.js"></script>

@@ -1,3 +1,4 @@
+
 /********** Template CSS **********/
 :root {
     --primary: #d6d8db;
@@ -438,3 +439,59 @@ margin-left: 45px;
 }
 /* Home Banner Start  */
  
+
+
+
+
+/* ***********8Flag page************** */
+.phone_lookup_form_control{
+    border-radius: 50px;
+    border: 1px solid #dee2e6;
+    padding: 6px 12px;
+}
+
+.password_lookup{
+    width: 241px;
+    position: relative;
+}
+
+.password_lookup_bg{
+    background-image: url(../images/lock.png);
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.password_lookup_form_control{
+    width: 100%;
+    border-radius: 50px;
+}
+=======
+
+/* *******************Login Page************************** */
+a{
+    background-color:black;
+    padding:10px;
+    text-decoration:none;
+    color:white;
+  
+  }
+  
+  li{
+    margin:30px;
+      display:inline;
+  }
+  ul{
+    list-style-type: none;
+  }
+  
+  .transform{
+    background-color:red;
+  }
+  
+  button{
+    background-color:green;
+    padding:10px;
+    color:white;
+  }
+
+/* *******************Login Page Ends************************** */
