@@ -10,6 +10,11 @@
     --navbar: #5b00db;
     --colorone: #38B6FF;
 
+    --btn1color:#5b00db;
+
+
+    --influence-bg:#fafafa;
+
 
 }
 
@@ -211,7 +216,7 @@
 
 .getstartbtn {
     border-radius: 30px;
-    background-color: #5b00db;
+    background-color: var(--btn1color);
     color: white;
     font-weight: 700;
     text-decoration: none;
@@ -546,11 +551,11 @@
 
 
 
-input[type="text"] {
+.inputWithIcon input[type="text"] {
     width: 100%;
     border: 1px solid #aaa;
     border-radius: 200px;
-    height: 40px;
+    height: 45px;
     margin: 8px 0;
     outline: none;
     padding: 8px;
@@ -559,11 +564,7 @@ input[type="text"] {
     transition: 0.3s;
 }
 
-input[type="text"]:focus {
-    border-color: #38B6FF;
-    box-shadow: 0 0 5px 0 #38B6FF;
-}
-
+ 
 .inputWithIcon input[type="text"] {
     padding-left: 40px;
 }
@@ -574,17 +575,16 @@ input[type="text"]:focus {
 
 .inputWithIcon i {
     position: absolute;
-    left: 0;
-    top: 19px;
+    left: 10;
+    top: 22px !important;
+    
+    font-size: 18px;
     padding: 9px 9px 8px 15px;
     color: #38B6FF;
     transition: 0.3s;
 }
 
-.inputWithIcon input[type="text"]:focus+i {
-    color: #38B6FF;
-}
-
+ 
 .inputWithIcon.inputIconBg i {
     background-color: #aaa;
     color: #fff;
@@ -592,16 +592,13 @@ input[type="text"]:focus {
     border-radius: 4px 0 0 4px;
 }
 
-.inputWithIcon.inputIconBg input[type="text"]:focus+i {
-    color: #fff;
-    background-color: #38B6FF;
-}
+ 
 
 
 
 
 
-input[type="password"] {
+.inputWithIcon input[type="password"] {
     width: 100%;
     border: 1px solid #aaa;
     border-radius: 200px;
@@ -614,24 +611,21 @@ input[type="password"] {
     transition: 0.3s;
 }
 
-input[type="password"]:focus {
-    border-color: #38B6FF;
-    box-shadow: 0 0 5px 0 #38B6FF;
-}
+ 
 
 .inputWithIcon input[type="password"] {
     padding-left: 40px;
 }
 
-.inputWithIcon input[type="password"]:focus+i {
-    color: #38B6FF;
+
+.inputWithIcon input::placeholder{
+    font-size: 14px;
+
 }
 
-.inputWithIcon.inputIconBg input[type="text"]:focus+i {
-    color: #fff;
-    background-color: #38B6FF;
-}
-
+ 
+ 
+ 
 
 
 
@@ -787,3 +781,83 @@ footer {
         visibility: hidden;
     }
 }
+
+
+
+/* #################>Signup Css Start  <################*/
+.signup_main{
+      font-size: 32px;
+    margin-bottom: 30px;
+        color: var(--Mainheading);
+    font-family: Avenir Heavy;
+}
+
+@media screen and (min-width: 1280px){
+.signup_main{
+    font-size: 50px;
+}
+}
+
+/* #################>Signup Css Start  <################*/
+.signupbtns{
+    border: none;
+width: 100%;
+}
+
+
+@media(min-width:600px)
+{
+    .signupbtns{
+    border: none;
+width: 35%;
+padding-top: 12px;
+padding-bottom: 12px;
+}
+}
+
+.signup_hint{
+    font-size: 15px;
+}
+
+
+/*#####################> Influences form Start<########### */
+.input_signup{
+      
+    opacity: 0.6;
+    font-size: 12px;
+}
+.iti--separate-dial-code .iti__selected-flag {
+    background-color: white !important;
+   
+    margin-left: 10px !important;
+    margin-top: 7px !important;
+    height: 30px !important;
+}
+
+.inpout{
+        border:1px solid  #c8ccd9 !important;
+        border-radius: 30px;
+      
+}
+.flag_uinput{
+    padding-left: 120px !important;
+}
+/* In  */ 
+.inputWithIcon{
+    position: relative;
+}
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  padding: 9px 10px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+
+.influence_main{
+    background-color: var(--influence-bg);
+}
+ 
+ 
