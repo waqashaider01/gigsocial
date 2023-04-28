@@ -1,0 +1,338 @@
+.nvlink2{
+    color:white !important;
+}
+
+.nav-item2{
+    margin-right: 2rem !important;
+    font-family: Avenir Heavy !important;
+}
+.nav-collpase2{
+    flex-basis: 50% !important;
+flex-grow: 0;
+align-items: center;
+}
+.left img{
+    width:30%;
+    
+}
+.box svg{
+    height:100%;
+    width:100%;
+}
+.discover-humna{
+    margin-top: 2rem;
+}
+.dis-btn{
+    padding:0.5rem 4rem 0.5rem 4rem !important;
+    border-radius: 20px;
+    color: #5b00db;
+    border: 1px solid rgba(91, 0, 219, 0.5);
+    border-color: #5b00db;
+    font-size: 14px;
+    min-width: fit-content;
+    box-shadow: none !important;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: Avenir Heavy;
+    font-weight: 900;
+    line-height: 1.75;
+    border-radius: 25px;
+    letter-spacing: -0.08px;
+    text-transform: uppercase;
+
+}
+.post-btn{
+    padding:0.5rem 4rem 0.5rem 4rem !important;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #5b00db;
+    border: 1px solid rgba(91, 0, 219, 0.5);
+    border-color: #5b00db;
+    font-size: 14px;
+    min-width: fit-content;
+    box-shadow: none !important;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: Avenir Heavy;
+    font-weight: 900;
+    line-height: 1.75;
+    border-radius: 25px;
+    letter-spacing: -0.08px;
+    text-transform: uppercase;
+
+}
+.parent-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.c2{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.box{
+   
+    border-radius: 20px;
+    padding:10px 15px;
+}
+.parent-div h6{
+margin-bottom: 0 !important;
+}
+.child-stars svg{
+    width:1rem;
+
+}
+.Dashboard{
+    color: #5b00db;
+    letter-spacing: 3.5px;
+    font-family: Avenir Black;
+    opacity: .8;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.dashboard-sec{
+    margin-top: 3rem;
+}
+.discover-col{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.dis-btn{
+    margin-right: 1rem;
+}
+.active-box{
+    padding:40px;
+    color: #323643;
+    opacity: 0.6;
+    background-color: #ebedf2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.active-box svg{
+    width:1rem !important;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.sidebar {
+height: 100vh; 
+width: 300px;
+position: fixed; 
+z-index: 1;
+top: 0;
+right: -300px;
+background-color: #fff; 
+overflow-x: hidden; 
+padding-top: 20px; 
+padding-left: 20px;
+transition: 0.5s;
+display: flex; 
+justify-content: left;
+align-items:flex-start;
+flex-direction: column;
+
+
+
+
+}
+
+
+.sidebar a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+
+.sidebar a:hover {
+color: #f1f1f1;
+}
+
+
+
+#check{
+display: none;
+}
+label #btn, label #cancel{
+position: absolute;
+cursor: pointer;
+height:45px;
+width:45px;
+background:#0A2942;
+color:rgb(241, 235, 235);
+font-size: 29px;
+border: 1px solid #0a0a0a;
+text-align: center;
+line-height: 45px;
+border-radius:  5px;
+top:15%;
+transition: all 0.5s ease;
+
+right:3%;
+z-index: 1;
+
+}
+label #cancel{
+    right:5% !important; 
+opacity:0;
+visibility: hidden;
+}
+#check:checked ~ label #btn{
+margin-right: 245px;
+opacity: 0;
+visibility: hidden;
+
+}
+
+#check:checked ~ label #cancel{
+margin-right: 230px;
+opacity: 1;
+visibility: visible;
+
+}
+
+
+#check:checked ~  .cards .card{
+margin-right: 11rem;
+margin-left: -6rem;
+transition: 1s all ease-in-out;
+}
+#check:checked ~ .sidebar{
+right:0;
+}
+
+.headerimg{
+width:175px;
+height:54px;
+margin-top: 3rem;
+
+
+}
+.sidebar p{
+font-size: 1.1rem;
+text-align: center;
+font-weight: 400;
+color:rgb(46, 44, 44);
+}
+.sidebar button{
+margin-bottom: 0.8rem;
+width: 158px;
+height:30px;
+background-color: #262661;
+border: none;
+color:white;
+border-radius: 9px;
+font-size: 1.4rem;
+
+
+}
+.coloumn h5{
+    font-weight:300px !important;
+
+}
+@media(max-width:450px)
+
+{
+    .dis-btn{
+        padding:0.5rem 2.5rem 0.5rem 2.5rem !important;
+        border-radius: 20px;
+        color: #5b00db;
+        border: 1px solid rgba(91, 0, 219, 0.5);
+        border-color: #5b00db;
+        font-size: 14px;
+        min-width: fit-content;
+        box-shadow: none !important;
+        box-sizing: border-box;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        font-family: Avenir Heavy;
+        font-weight: 900;
+        line-height: 1.75;
+        border-radius: 25px;
+        letter-spacing: -0.08px;
+        text-transform: uppercase;
+    
+    }
+    .post-btn{
+        padding:0.5rem 2.5rem 0.5rem 2.5rem !important;
+        border-radius: 20px;
+        color: #fff;
+        background-color: #5b00db;
+        border: 1px solid rgba(91, 0, 219, 0.5);
+        border-color: #5b00db;
+        font-size: 14px;
+        min-width: fit-content;
+        box-shadow: none !important;
+        box-sizing: border-box;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        font-family: Avenir Heavy;
+        font-weight: 900;
+        line-height: 1.75;
+        border-radius: 25px;
+        letter-spacing: -0.08px;
+        text-transform: uppercase;
+    
+    }
+}
+ @media (max-width:760px)
+ {
+    .nav-item2 svg{
+        width:20% !important;
+    }
+    .display{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-bottom: 1rem;
+    }
+    .display img{
+        width:40px !important;
+
+    }
+    .svg svg{
+        width:50% !important;
+        height:100% !important;
+    }
+ }
+@media(max-width:1050px)
+{
+    .custome-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .discover-humna{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
