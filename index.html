@@ -8,9 +8,6 @@
 
 <!------ bootstrap CDN ------>
 
-
-
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -20,14 +17,13 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!--------- own CSS --------->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+<!--------- own CSS --------->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
-
-
 
 
   <div class="container-xxl bg-white p-0">
@@ -36,12 +32,14 @@
 
     <!-- Navbar & Hero Start -->
     <div class="container-xxl position-relative p-0">
-      <nav class="navbar navbar-expand-lg navbar-dark  px-4 px-lg-5 py-3 py-lg-0"
-        style="  background-color: #5b00db!important;">
+      <nav class="navbar navbar-expand-lg navbar-dark  px-4 px-lg-5 py-3 py-lg-0 navbar_index">
         <a href="" class="navbar-brand p-0">
 
           <!-- Logo Start  -->
-          <svg width="189px" height="37px" viewBox="0 0 189 37" version="1.1">
+
+
+          <img src="./images/logo.png" alt="">
+          <!-- <svg width="189px" height="37px" viewBox="0 0 189 37" version="1.1">
             <title>Group 4 Copy 4</title>
             <g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g id="Header-Dark" transform="translate(-3.000000, -22.000000)">
@@ -81,7 +79,7 @@
                 </g>
               </g>
             </g>
-          </svg>
+          </svg> -->
           <!-- Logo End  -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -90,16 +88,11 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-5 py-0 pe-4">
             <a href="index.html" class="nav-item nav-link active">Advertisers</a>
-            <a href="about.html" class="nav-item nav-link">Influencers
-              /
-              Athletes</a>
-
+            <a href="about.html" class="nav-item nav-link">Influencers/Athletes</a>
           </div>
-
-
           <div class=" ms-auto d-lg-flex d-md-block ">
             <div>
-              <a href="login.html" class="mx-lg-5 loginlink ">Log In</a>
+              <a href="" class="mx-lg-5 loginlink ">Log In</a>
             </div>
             <div>
               <a href="" class="signupbtn ">Sign Up</a>
@@ -108,20 +101,32 @@
         </div>
       </nav>
 
-      <div class="container-xxl py-5 bg-dark hero-header mb-5">
+      <div class="container-xxl py-5  hero-header mb-5">
         <div class="Home_angle__JV_k2"></div>
         <div class="container my-5 py-5">
-          <div class="row align-items-center g-5">
+          <div class="row align-items-center  ">
+            <div class="col-lg-6 order-2 order-lg-1 my-5 my-sm-0">
+              <div class="position-relative">
+                <div class="mobile2">
+                  <img class="img-fluid" src="./images/mobile12.png" alt="">
+                </div>
+                <div class="mobile1">
+                  <img class="img-fluid" src="./images/mobile1.png" alt="">
 
-            <div class="col-lg-6     position-relative">
-              <img class="img-fluid" src="./images/mobile1.png" alt="">
+                </div>
+              </div>
+
             </div>
-            <div class="col-lg-6 text-center  ">
-              <h1 class="display-3 text-white  ">Enjoy Our<br>Delicious Meal</h1>
-              <p class="text-white  mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
-                magna dolore erat amet</p>
-              <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+            <div class="col-lg-6  order-1 order-lg-2  text-center ">
+
+              <div>
+                <h1 class=" text-white  ">The marketplace for buying influencer & athlete cross platform brand deals
+                  directly</h1>
+                <p class="text-white   my-4 pb-2 banner_content">Buy posts, license name, image and likeness, directly
+                  from top creators and athletes, or post your jobs and get matched
+                  based on audiences and budget.</p>
+                <a href="" class="    py-3 my-5 my-sm-0 px-5 me-3  getstartbtn">Get Started</a>
+              </div>
             </div>
 
           </div>
@@ -131,81 +136,159 @@
     <!-- Navbar & Hero End -->
 
   </div>
+  <div class="container">
 
+    <ul class="nav nav-tabs tabs_setting" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+          role="tab" aria-controls="home" aria-selected="true">ADVERTISERS</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+          role="tab" aria-controls="profile" aria-selected="false">NIL</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+          role="tab" aria-controls="contact" aria-selected="false">INFLUENCERS</button>
+      </li>
+    </ul>
+  </div>
+  <div class=" ">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem deserunt provident repudiandae nulla libero quasi sunt
-  sint sequi labore similique maiores adipisci ipsam ut alias saepe, iste aliquam consequuntur itaque a ab placeat sit
-  repellat totam assumenda! Expedita, optio facere necessitatibus pariatur dolor veniam. Quas nemo, sunt saepe molestiae
-  cum blanditiis, excepturi eligendi iusto, quibusdam dolorum fuga? Deserunt perferendis nisi est saepe neque cum
-  praesentium consequuntur magnam illum enim culpa tempora natus accusamus, eum eligendi totam, voluptatem qui quidem
-  fugit iusto aspernatur dolor distinctio consectetur eveniet. Id illum cum animi reiciendis quam illo voluptates!
-  Dignissimos eum accusamus voluptates ut temporibus nostrum iste dolorum autem eos officia adipisci quas tempore
-  similique beatae at quibusdam blanditiis minima libero hic quod voluptatem ad, dolorem aliquid? Repellat nam
-  blanditiis cupiditate doloribus ducimus obcaecati mollitia vel cum dolor perspiciatis corrupti dolore alias eveniet
-  animi voluptates qui voluptatibus laborum voluptas maxime, aspernatur at? Cumque vel unde quaerat tempora laudantium
-  fuga labore dolorum laboriosam quia ab rem, necessitatibus molestiae enim ad voluptatem! Atque sint mollitia quasi
-  tempora dolor libero eveniet ducimus, quam laudantium dicta, impedit deleniti eum facilis aut doloremque at
-  voluptatibus expedita, a eius ipsam! Ad tempore adipisci cumque suscipit ipsam officiis qui placeat omnis dolores
-  natus ipsum itaque veniam officia sit fuga doloremque, rerum facere enim cum architecto nesciunt et! Quasi inventore
-  officiis nobis praesentium cumque totam fuga exercitationem illum delectus quas excepturi perferendis, animi harum
-  veniam quisquam sit nesciunt, incidunt repudiandae temporibus nemo voluptatum quia molestias reprehenderit. Possimus
-  deleniti excepturi quod rerum neque esse earum provident at non, voluptates saepe laudantium sit optio molestiae harum
-  nemo ab ipsam voluptate maiores voluptatum consequatur. Omnis ex dolorem est maxime veniam ratione officia possimus
-  praesentium temporibus exercitationem recusandae quas commodi similique, eligendi quia culpa quisquam provident! Eius
-  commodi non quos sequi nam deserunt aspernatur itaque voluptatibus repellat illum rerum, soluta saepe, placeat dicta
-  asperiores facere debitis vero, quod nobis obcaecati odio possimus laboriosam tempore. Illum quidem ratione autem
-  tempore enim, iusto hic et excepturi expedita laboriosam doloremque voluptate pariatur quisquam? Molestiae iure ad
-  minus modi, sapiente iste odio impedit odit eius. Voluptatibus optio cumque ducimus temporibus autem in. Harum id
-  vitae laboriosam deleniti nostrum vero perspiciatis velit, magni distinctio sed, culpa eligendi quisquam aspernatur.
-  Nihil expedita, quo ipsam, tempore perferendis nobis harum at blanditiis facilis earum veritatis ut tenetur
-  exercitationem quae similique nostrum ullam magnam itaque ipsa qui mollitia ea cumque id quidem. Nam cumque rem
-  reprehenderit doloremque odio, reiciendis nisi pariatur harum a mollitia doloribus praesentium id aliquam amet,
-  incidunt veniam natus illo nulla! Magnam exercitationem eaque natus ipsa incidunt harum eligendi praesentium mollitia
-  dolore? Non sequi assumenda porro earum natus temporibus veritatis odio aspernatur magni cumque laudantium mollitia
-  necessitatibus deserunt nulla accusamus architecto asperiores et nihil dolorem dolorum doloremque, esse, eius quaerat?
-  Voluptatum in ex eos vitae officia? Perferendis corrupti blanditiis tenetur dolorum ullam necessitatibus, recusandae
-  voluptatum, iure eius esse amet. Facilis nam dolor veniam, exercitationem voluptas architecto illo, aspernatur at
-  excepturi laudantium, ex dolore iure. Molestias, quaerat voluptatem rem, corrupti, magnam ipsa distinctio laudantium
-  impedit deleniti repellendus dolorem vel animi repellat corporis cum incidunt reiciendis error cupiditate illo
-  inventore mollitia. Optio asperiores quaerat voluptates nam placeat tenetur ut officiis similique deleniti? Corrupti
-  harum eaque dolore asperiores, laborum obcaecati delectus tenetur, dicta facere vel blanditiis expedita, perferendis
-  veniam alias. Esse enim libero eum sint qui explicabo accusamus sapiente officia obcaecati incidunt facilis, animi
-  excepturi velit provident, laudantium unde ipsum corrupti totam officiis harum nulla omnis accusantium dolore est.
-  Alias, harum dolore eum incidunt magni architecto vel consequuntur reprehenderit dolorem aut cumque provident nemo
-  iusto ipsam ex magnam maiores aliquam consequatur. Dolorem magnam vero eius nisi, officia nesciunt ut, doloremque
-  error aliquam quibusdam hic quisquam saepe iusto aut voluptatibus veniam quae numquam dolores pariatur! Sunt, dolores.
-  Nostrum excepturi culpa doloribus, illo nihil explicabo fugiat minima soluta quam, tenetur architecto. Asperiores
-  numquam adipisci maxime quae quod esse ex. Repellat accusamus atque, blanditiis necessitatibus fugiat, voluptate
-  tenetur cumque magni ipsa, inventore quas animi facere delectus pariatur consectetur unde molestiae placeat. Ea
-  aperiam explicabo quia culpa rem aut quam ipsum quo blanditiis doloribus! Quam, assumenda iusto error expedita
-  voluptatibus nostrum iure, sint explicabo corrupti ut nisi delectus inventore, unde odit nam? Iusto architecto iste
-  pariatur obcaecati cupiditate, mollitia veniam aut qui perferendis, dolore commodi quo error eum, sequi quidem maxime
-  sint. Tempore facere deleniti error corrupti distinctio expedita qui, dolores asperiores cumque praesentium veritatis
-  saepe accusantium provident odit illum minus minima ex nobis esse voluptatum et in voluptatem. Voluptatibus, fuga hic,
-  eum corrupti cupiditate ab optio vel consequatur esse assumenda molestiae, eveniet commodi facere nulla quaerat illum?
-  Commodi voluptatibus adipisci pariatur eveniet repellendus minus soluta, quidem reprehenderit repellat qui vel fuga
-  eaque asperiores sunt? Ullam facere eius voluptatem impedit inventore commodi consequatur, voluptates molestiae
-  debitis provident nobis error hic ipsam fuga, consequuntur nam vero unde doloremque. Non alias cum facilis natus
-  commodi beatae voluptatem laudantium amet explicabo iste quos quibusdam corporis, excepturi nihil ab similique
-  inventore neque tempore. Earum quisquam dolor consequuntur, itaque ad, quibusdam repudiandae officia sequi labore,
-  fugit dicta veritatis laborum nam debitis sint placeat tenetur porro at necessitatibus maxime libero exercitationem
-  cupiditate sunt? Pariatur quas culpa non, tempora, laudantium at commodi nesciunt a consequuntur aliquam saepe id
-  maiores delectus ab nobis temporibus alias. Nisi distinctio voluptas quam quidem, adipisci aperiam dolor aspernatur
-  nesciunt debitis odio et magnam? Est quas necessitatibus saepe cumque molestias dolorem voluptatem numquam
-  exercitationem, rem dolores atque quam reprehenderit harum quidem ipsa expedita nesciunt. Dolor eaque incidunt natus
-  nihil a aliquid sit illum magni voluptatibus, animi odio nulla quam tempore alias ipsum aliquam in! Ullam tempore
-  totam consequatur corrupti obcaecati non voluptatibus enim. Voluptatem, aut. Maxime sed enim soluta nam aliquam
-  excepturi perferendis veritatis nihil consequuntur ullam unde accusamus ipsam, blanditiis quod eum pariatur et quas
-  reprehenderit rem dolore omnis distinctio temporibus aliquid? Tempore dignissimos laudantium exercitationem alias sunt
-  vel ratione amet possimus, quis nobis autem eaque, optio dolorem! Nisi magnam aliquid fugiat modi iure dicta
-  praesentium, asperiores et dolor nihil quos velit a temporibus debitis. Voluptatem repellendus in rem ipsam tempore?
-  Veniam.
+        <div class="  tabsstyle1">
+          <div class="container">
+            <div class="text-center">
+              <div class="my-5">
+                <h1>Buy from all the networks in one place</h1>
+                <p>100+ inventory spaces for influencers to promote your brand</p>
+              </div>
+              <ul class="my-5 advertise_icon">
+                <li><svg width="50" height="50" viewBox="0 0 40 40" version="1.1">
+                    <title>icons/social/Instagram</title>
+                    <g id="icons/social//Instagram" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M20.00078,11 C15.0300234,11 11.000429,15.0294373 11.000429,20 C11.000429,24.9705627 15.0300234,29 20.00078,29 C24.9715366,29 29.001131,24.9705627 29.001131,20 C29.001131,17.6130373 28.0529439,15.3238251 26.3650406,13.6359876 C24.6771373,11.9481501 22.3878358,11 20.00078,11 L20.00078,11 Z"
+                        id="Path" stroke="#5B00DB" stroke-width="2"></path>
+                      <path
+                        d="M20.00078,25.1935991 C17.9000616,25.1935991 16.0061979,23.9281926 15.2022965,21.9874539 C14.3983951,20.0467152 14.8427711,17.8128344 16.3282122,16.327469 C17.8136534,14.8421037 20.0476266,14.3977718 21.9884313,15.2016651 C23.929236,16.0055584 25.194644,17.8993635 25.194644,20 C25.1948093,21.3774896 24.6476513,22.6986073 23.6735753,23.6726337 C22.6994992,24.6466601 21.3783233,25.1937809 20.00078,25.1935991 L20.00078,25.1935991 Z"
+                        id="Path" stroke="#5B00DB" stroke-width="2"></path>
+                      <path
+                        d="M37.8924278,12.578942 C37.8629371,11.0857743 37.5802299,9.60844106 37.0563492,8.209874 C36.6035641,7.0090679 35.8950976,5.9210621 34.9800402,5.021246 C34.0815213,4.10530202 32.9937424,3.39670035 31.7927819,2.945 C30.3942349,2.42080966 28.9167683,2.13810864 27.4234895,2.108972 C25.5041647,2.0216 24.8906107,2 20.0021961,2 C15.1137814,2 14.4997235,2.020268 12.5793366,2.108972 C11.0861199,2.13847834 9.60873877,2.42116768 8.21011619,2.945 C7.00892723,3.39711236 5.92074458,4.10564492 5.02136383,5.021246 C4.10488305,5.91987602 3.39623024,7.0082245 2.94516286,8.209874 C2.42131618,9.60844997 2.13861606,11.0857783 2.10910225,12.578942 C2.02037679,14.498138 2,15.111776 2,20 C2,24.888224 2.02037679,25.501754 2.10906625,27.420968 C2.13858525,28.9141636 2.4212976,30.3915227 2.94516286,31.790126 C3.39636031,32.9917097 4.10499581,34.0800316 5.02136383,34.978754 C5.92118541,35.8937859 7.00924437,36.6021949 8.21011619,37.054874 C9.60878683,37.5785398 11.0861372,37.8612354 12.5793366,37.890938 C14.4997235,37.97822 15.1122874,38 20.000702,38 C24.8891167,38 25.5027606,37.979624 27.4220495,37.890938 C28.9152735,37.8614145 30.3926597,37.5787132 31.7912879,37.054874 C34.2096082,36.1199553 36.1213444,34.2083328 37.0563492,31.790126 C37.5807991,30.3916876 37.8635249,28.9142265 37.8924278,27.420968 C37.9797312,25.500368 38,24.888224 38,20 C38,15.111776 37.9797312,14.498138 37.8924278,12.578942 Z"
+                        id="Path" stroke="#5B00DB" stroke-width="2"></path>
+                      <path
+                        d="M30.6784165,6.924 L30.6775364,6.924 C29.3523192,6.92424299 28.2781814,7.99863444 28.2783029,9.32379996 C28.2784244,10.6489655 29.3527592,11.72316 30.6779764,11.72316 C32.0031937,11.72316 33.0775285,10.6489655 33.07765,9.32379996 C33.0777715,7.99863444 32.0036336,6.92424299 30.6784165,6.924 Z"
+                        id="Path" stroke="#5B00DB" stroke-width="2"></path>
+                    </g>
+                  </svg>
+                  <h6>Instagram</h6>
+                </li>
+                <li>
 
+                  <svg width="50" height="50" viewBox="0 0 40 40" version="1.1">
+                    <title>icons/social/TikTok</title>
+                    <g id="icons/social/TikTok" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <path
+                        d="M28.0952381,2.9 C28.2318477,2.9 28.3567468,2.95103104 28.4466151,3.03780044 C28.5249582,3.11344204 28.5761905,3.21715971 28.5761905,3.33333333 L28.5761905,3.33333333 L28.5761905,4.66666667 C28.5761905,5.65367373 28.9889518,6.55026934 29.6608114,7.19896131 C30.3210281,7.83641198 31.2320247,8.23333333 32.2380952,8.23333333 L32.2380952,8.23333333 L33.6190476,8.23333333 C33.7556572,8.23333333 33.8805563,8.28436437 33.9704246,8.37113377 C34.0487677,8.44677537 34.1,8.55049305 34.1,8.66666667 L34.1,8.66666667 L34.1,14 C34.1,14.1046085 34.0579724,14.200142 33.99132,14.2736154 C33.9153801,14.3573267 33.808134,14.4130936 33.6871006,14.4286123 C33.5618139,14.444644 30.8732796,14.7691357 28.5761905,13.5218275 L28.5761905,13.5218275 L28.5761905,27.2921399 C28.3061351,30.1827655 27.0277649,32.5884496 25.0909278,34.3184553 C23.1577008,36.0452365 20.5737335,37.1 17.7380952,37.1 C14.74627,37.1 12.032288,35.9269047 10.0669863,34.029372 C8.1133286,32.1430819 6.9,29.5397005 6.9,26.6666667 C6.9,23.7936329 8.1133286,21.1902515 10.0669863,19.3039613 C12.032288,17.4064286 14.74627,16.2333333 17.7380952,16.2333333 L17.7380952,16.2333333 L18.068126,16.2331963 C18.4576507,16.234714 18.6550736,16.250565 18.7799484,16.3711338 C18.8582915,16.4467754 18.9095238,16.550493 18.9095238,16.6666667 L18.9095238,16.6666667 L18.9095238,22 C18.9095238,22.1161736 18.8582915,22.2198913 18.7799484,22.2955329 C18.6900801,22.3823023 18.565181,22.4333333 18.4285714,22.4333333 C16.4357775,22.4333333 15.4228259,22.9392257 14.6729848,23.6632103 C13.8759029,24.4328066 13.3857143,25.4962636 13.3857143,26.6666667 C13.3857143,27.8370697 13.8759029,28.9005268 14.6729848,29.6701231 C15.4581466,30.4282103 16.541614,30.9 17.7380952,30.9 C18.9345764,30.9 20.0180439,30.4282103 20.8032057,29.6701231 C21.6002876,28.9005268 22.0904762,27.8370697 22.0904762,26.6666667 L22.0904762,26.6666667 L22.0904762,3.33333333 C22.0904762,3.21715971 22.1417085,3.11344204 22.2200516,3.03780044 L22.2200516,3.03780044 Z"
+                        id="Path" stroke="#5B00DB" stroke-width="1.8"></path>
+                    </g>
+                  </svg>
+                  <h6>TikTok</h6>
+                </li>
+                <li><svg width="50" height="50" viewBox="0 0 40 40" version="1.1">
+                    <title>icons/social/Facebook</title>
+                    <g id="icons/social/Facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M27.5476413,19.9653293 L22.7425566,19.9653293 L22.7425566,38 L15.4624452,38 L15.4624452,19.9653293 L12,19.9653293 L12,13.6272284 L15.4624452,13.6272284 L15.4624452,9.52575714 C15.4624452,6.59276259 16.8223658,2 22.8073604,2 L28.2,2.02311381 L28.2,8.17532068 L24.2872881,8.17532068 C23.6454901,8.17532068 22.7430366,8.50383181 22.7430366,9.9029548 L22.7430366,13.6331298 L28.183679,13.6331298 L27.5476413,19.9653293 Z"
+                        id="Path" stroke="#5B00DB" stroke-width="2"></path>
+                    </g>
+                  </svg>
+                  <h6>Facebook</h6>
+                </li>
+                <li><svg width="50" height="50" viewBox="0 0 40 40" version="1.1">
+                    <title>icons/social/YouTube</title>
+                    <g id="icons/social/YouTube" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <path
+                        d="M24.9880497,25.2518824 C24.71466,25.2541143 24.4461477,25.3248118 24.2068533,25.4575663 C23.9521986,25.5921258 23.7128615,25.793965 23.4811832,26.0592395 L23.4811832,22.2896511 L21.7713588,22.2896511 L21.7713588,33.996328 L23.4811832,33.996328 L23.4811832,33.3331419 C23.7013733,33.5984163 23.9445398,33.7925665 24.2030239,33.9175146 C24.461508,34.044385 24.7544566,34.1039756 25.0876139,34.1039756 C25.5892645,34.1039756 25.9760333,33.9444265 26.2364321,33.6176391 C26.5006602,33.2908517 26.634689,32.823738 26.634689,32.2124534 L26.634689,27.4202128 C26.634689,26.7128142 26.4968308,26.1745762 26.2096263,25.8054987 C25.9319952,25.4364212 25.5241648,25.2518824 24.9880497,25.2518824 L24.9880497,25.2518824 Z M30.0945464,25.1442348 C30.868084,25.1442348 31.4654694,25.3633746 31.8771293,25.8016541 C32.2907038,26.2380114 32.4974911,26.8665965 32.4974911,27.6854872 L32.4974911,27.6854872 L32.4974911,29.8884185 L29.2635679,29.8884185 L29.2635679,31.512744 C29.2635679,31.968324 29.3210088,32.2835777 29.4301466,32.4604274 C29.5450284,32.637277 29.7326687,32.7218572 30.0045557,32.7218572 C30.2860161,32.7218572 30.4813152,32.6488107 30.5923676,32.4988729 C30.70342,32.3508575 30.7627757,32.0221478 30.7627757,31.512744 L30.7627757,31.512744 L30.7627757,31.1186769 L32.5013205,31.1186769 L32.5013205,31.5608009 C32.5013205,32.4488937 32.2926185,33.1140021 31.8656411,33.5657376 C31.4444078,34.0097839 30.8106431,34.2327683 29.9681764,34.2327683 C29.2137858,34.2327683 28.6144857,33.9982503 28.1798495,33.5215252 C27.747128,33.0467223 27.5250231,32.3950699 27.5250231,31.5608009 L27.5250231,31.5608009 L27.5250231,27.6835649 C27.5250231,26.9338763 27.7643602,26.3245139 28.2430345,25.8516334 C28.719794,25.3787528 29.3363264,25.1442348 30.0945464,25.1442348 Z M20.5,25.3518409 L20.5,33.9886389 L18.8093226,33.9886389 L18.8093226,33.0409555 C18.4953123,33.3908102 18.1717285,33.6599292 17.8328271,33.8406234 C17.4920111,34.0251622 17.1645979,34.1155093 16.8486729,34.1155093 C16.45616,34.1155093 16.1651261,33.9905612 15.9640829,33.7310535 C15.7687838,33.4734682 15.6673049,33.0909347 15.6673049,32.5757641 L15.6673049,32.5757641 L15.6673049,25.3556855 L17.3579823,25.3556855 L17.3579823,31.9798577 C17.3579823,32.1855415 17.3924469,32.3316347 17.4613759,32.4239041 C17.5360491,32.5142512 17.6528456,32.5603858 17.8098508,32.5603858 C17.9812162,32.5443107 18.1448524,32.4811245 18.2827809,32.3777694 C18.4804679,32.2515303 18.6579911,32.0959875 18.8093226,31.9164225 L18.8093226,31.9164225 L18.8093226,25.3518409 L20.5,25.3518409 Z M14.9282319,22.2896511 L14.9282319,23.9889454 L12.956094,23.9889454 L12.956094,33.9944057 L11.0490559,33.9944057 L11.0490559,23.9889454 L9.076918,23.9889454 L9.076918,22.2896511 L14.9282319,22.2896511 Z M24.189621,26.6224671 C24.3909619,26.6112185 24.5861287,26.6942799 24.7180774,26.8473737 C24.8387033,26.9973115 24.8980589,27.2202958 24.8980589,27.5105599 L24.8980589,31.9702463 C24.8980589,32.2489767 24.8463621,32.4450491 24.7487125,32.5642304 C24.651063,32.6872562 24.4998019,32.7468564 24.2930147,32.7468564 C24.1516498,32.7474926 24.0120575,32.7152527 23.8851842,32.6526552 C23.73501,32.5749751 23.5990519,32.4722778 23.4830978,32.3489352 L23.4830978,26.9684773 C23.5831221,26.8610206 23.7010472,26.7719013 23.8315727,26.7051251 C23.9429468,26.6501379 24.0655098,26.6218434 24.189621,26.6224671 Z M30.0237026,26.6589904 C29.7537304,26.6589904 29.560346,26.7339593 29.4416348,26.8954307 C29.3248382,27.0472907 29.2673973,27.3067983 29.2673973,27.6681867 L29.2673973,27.6681867 L29.2673973,28.5389789 L30.7646903,28.5389789 L30.7646903,27.6681867 C30.7646903,27.3067983 30.7053347,27.0472907 30.5847088,26.8954307 C30.4717417,26.7339593 30.280272,26.6589904 30.0237026,26.6589904 Z M20.3449095,5.14292558 C21.13185,5.14292558 21.7790176,5.37359902 22.2825829,5.83494589 C22.7842335,6.29437049 23.0369735,6.88835459 23.0369735,7.61305363 L23.0369735,12.5283201 C23.0369735,13.341444 22.7899776,13.9796405 22.2979004,14.4429096 C21.8000792,14.9061788 21.1241912,15.1368522 20.2568335,15.1368522 C19.425855,15.1368522 18.7576258,14.8984897 18.2559752,14.4217646 C17.758154,13.9431172 17.5092434,13.2991539 17.5092434,12.4917968 L17.5092434,7.55922983 C17.5092434,6.82107483 17.7638981,6.23477985 18.2789515,5.7984226 C18.7901756,5.36206534 19.4813812,5.14292558 20.3449095,5.14292558 Z M26.483428,5.38321041 L26.483428,12.6763356 C26.483428,12.9012422 26.527466,13.0646359 26.6059686,13.1645943 C26.6825565,13.2664751 26.8146705,13.3164544 26.9927374,13.3164544 C27.1839119,13.2975801 27.3667996,13.2286428 27.5231084,13.1165374 C27.7356398,12.9839002 27.9328536,12.8128174 28.1090057,12.603289 L28.1090057,5.38321041 L30.0141291,5.38321041 L30.0141291,14.8965674 L28.1090057,14.8965674 L28.1090057,13.8470033 C27.7990638,14.2046333 27.4282161,14.5040484 27.013799,14.7312514 C26.6754794,14.9225348 26.2953004,15.0268707 25.9071042,15.0349715 C25.4648092,15.0349715 25.1354813,14.8927228 24.9114618,14.6101479 C24.6893569,14.3275729 24.5783045,13.9027493 24.5783045,13.3337549 L24.5783045,5.38321041 L26.483428,5.38321041 Z M12.3223293,2 L13.714314,7.15362904 L13.8483428,7.15362904 L15.1713984,2 L17.3522382,2 L14.8573881,9.54494367 L14.8573881,14.8965674 L12.7129275,14.8965674 L12.7129275,9.78715078 L10.1606352,2.00192228 L10.3200963,2.00111243 C10.3534115,2.00103827 10.3911835,2.00096905 10.4326699,2.00090445 L12.3223293,2 L12.3223293,2 Z M20.2549188,6.79031837 C20.0488507,6.7796791 19.8463965,6.84765994 19.6881685,6.98062396 C19.5443128,7.10829249 19.4643495,7.29349966 19.469893,7.48618324 L19.469893,12.6686465 C19.469893,12.9281541 19.5407368,13.1280711 19.6747656,13.2741642 C19.8087944,13.4183351 20.0002641,13.4894594 20.2549188,13.4894594 C20.4798627,13.5005263 20.7002746,13.423318 20.8695365,13.2741642 C21.02568,13.1142454 21.1082663,12.8961625 21.0973854,12.672491 L21.0973854,7.48618324 C21.1034578,7.29007526 21.0168464,7.10262441 20.8637924,6.98062396 C20.6893429,6.84746773 20.4738255,6.78010701 20.2549188,6.79031837 Z"
+                        id="Combined-Shape" fill="#5B00DB" fill-rule="nonzero"></path>
+                      <path
+                        d="M33.5888683,36.5779482 C32.1987984,37.9696779 20.4942559,38.0004344 20.4942559,38.0004344 C20.4942559,38.0004344 8.78779876,37.9716002 7.39581408,36.5779482 C6.0019147,35.1804516 6,28.3063832 6,28.2544817 C6,28.2141138 6.00382939,21.3265895 7.39581408,19.9310152 C8.78971346,18.5373632 20.4942559,18.5200626 20.4942559,18.5218978 C20.4942559,18.5218978 32.2007131,18.5392854 33.5888683,19.9329374 C34.9827677,21.330434 35,28.2160361 35,28.256404 C35,28.2544817 34.9885118,35.1766071 33.5888683,36.5779482 Z"
+                        id="Mask" stroke="#5B00DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      </path>
+                    </g>
+                  </svg>
+                  <h6>YouTube</h6>
+                </li>
+                <li><svg width="50" height="50" viewBox="0 0 40 40" version="1.1">
+                    <title>icons/social/Twitter</title>
+                    <g id="icons/social/Twitter" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M37.9985581,8.56761471 C38.0104767,8.77427049 37.9482041,8.97837576 37.8230126,9.14298446 C37.0181951,10.2780751 36.0513688,11.2884323 34.9535186,12.1416762 C34.7914766,12.2702883 34.5146548,12.3989004 34.5146548,12.6290483 C34.5146548,18.5925865 32.9955109,24.5493557 28.660887,28.8747825 C23.1447068,34.3712559 14.8535571,35.8672172 7.50090068,33.8297314 C6.08169496,33.4344677 4.70972761,32.885182 3.40933983,32.1916199 C2.97722779,31.9547029 2.5518675,31.7110169 2.13325896,31.4334856 C2.02523096,31.3454879 1.9509617,31.2710283 2.03873446,31.2101068 C2.12650721,31.1491852 2.19402472,31.1627234 2.5248605,31.2101068 C4.59874729,31.3948288 6.68793487,31.1269491 8.64869828,30.4248963 C9.71547487,30.0525982 12.0245736,29.301233 12.6997486,28.2858746 C12.6997486,28.2858746 12.6997486,28.2858746 12.7470109,28.2384912 C12.4769409,28.1775697 12.2136226,28.1775697 11.9435526,28.1301863 C9.91802739,27.5548166 7.27809291,26.5529963 6.04252255,23.1752374 C5.96150155,22.9721657 6.04252255,22.8706299 6.24507507,22.9112442 C7.17961045,23.0401248 8.12911803,23.0103766 9.05380332,22.8232465 C8.72631938,22.7634267 8.40685526,22.6657518 8.10180648,22.5321771 C5.55554942,21.4994062 3.76210249,19.1710043 3.40933983,16.4400267 C3.36953533,16.1598675 3.35597269,15.8765882 3.36882932,15.5938948 C3.36882932,15.3908231 3.47010558,15.3299016 3.63889935,15.4382065 C4.5325073,15.8952045 5.50800972,16.1690452 6.50839335,16.2437241 C6.18430932,15.9932691 5.88723229,15.7157378 5.59015527,15.4382065 C3.40933983,13.3668754 2.565371,9.14975352 4.30732265,6.52335982 C4.44910942,6.31351909 4.54363392,6.31351909 4.71917944,6.52335982 C8.70946404,11.0857035 13.6314902,13.2111871 19.5730307,14.0979334 C19.7350727,14.0979334 19.7485762,14.0979334 19.728321,13.9219379 C19.5382845,12.8913732 19.5520487,11.8334171 19.7688315,10.8081722 C20.0365014,9.73103289 20.5366361,8.72588901 21.2339614,7.86363289 C21.9059421,7.02525823 22.7424156,6.33409003 23.6915986,5.83291612 C24.5732933,5.38007532 25.5338308,5.10197761 26.5205821,5.01386035 L26.5205821,5.01386035 C26.5621948,5.04662491 26.6207561,5.04662491 26.6623688,5.01386035 L26.5205821,5.01386035 L26.7501416,5.01386035 C28.6850499,4.89500313 30.5889068,5.54421676 32.0502658,6.82119828 C32.1879175,6.93782317 32.3144915,7.06698763 32.4283639,7.20703447 C32.5060195,7.2850514 32.6203012,7.31369507 32.7254409,7.28149409 C34.2287559,6.91336234 35.680353,6.35852248 37.0465613,5.62984444 C37.1080824,5.59849292 37.1808409,5.59849292 37.242362,5.62984444 C37.3031278,5.67722783 37.242362,5.7584565 37.242362,5.81937801 C36.9794164,6.62713765 36.5671304,7.37804362 36.0270469,8.03285929 C35.6827076,8.45930982 34.8184836,9.52882065 34.237833,9.62358743 C35.4879246,9.41732231 36.7064421,9.05105762 37.8635231,8.53376943 C38.0120616,8.46607887 37.9985581,8.43900265 37.9985581,8.53376943 L37.9985581,8.56761471 Z"
+                        id="Path" stroke="#5B00DB" stroke-width="2"></path>
+                    </g>
+                  </svg>
+                  <h6>Twitter</h6>
+                </li>
+                <li><svg width="50" height="50" viewBox="0 0 40 40" version="1.1">
+                    <title>icons/social/Snapchat</title>
+                    <g id="icons/social/Snapchat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M33.0138783,31.8393496 C32.9911629,31.9599351 32.9715451,32.075922 32.953476,32.1867993 C32.8424804,32.8500195 32.6364931,34.0855099 31.2203952,34.0855099 C30.9194163,34.0855099 30.5502913,34.0165309 30.0397113,33.9209822 C29.3732212,33.7968201 28.5441095,33.6414896 27.8037944,33.6414896 C27.0856784,33.6414896 26.7728255,33.7932434 26.6504722,33.8836825 C26.4434524,34.0359472 26.2266237,34.2163145 25.9932747,34.4099666 C24.9592083,35.2688828 23.5431104,36.4435695 21.3144211,36.85029 C20.7744144,36.9489045 20.3505659,36.9974452 20.017579,36.999489 C20.0160302,36.999489 20.0139651,37 20.0119001,37 L19.9989936,37 C19.6453563,36.9974452 19.2215079,36.9483935 18.6835662,36.85029 C16.4559094,36.4435695 15.0398115,35.2683719 14.0057451,34.4104776 C13.7723961,34.2168255 13.5560836,34.0364582 13.3490639,33.8836825 C13.1988325,33.7733161 12.8772033,33.6414896 12.1952254,33.6414896 C11.4549103,33.6414896 10.6257986,33.7968201 9.9593085,33.9209822 C9.44821227,34.0170419 9.07908722,34.0855099 8.77759207,34.0855099 C7.36149415,34.0855099 7.15550688,32.8505305 7.04554376,32.1873103 C7.0274747,32.0764329 7.00785686,31.960957 6.98514147,31.8393496 C4.44514811,31.502119 2.13334115,30.870067 2.00169515,28.5886508 C1.97071962,28.0506146 2.36772265,27.5810466 2.90824563,27.5161552 C7.58864803,26.9530823 9.75022368,22.7111298 9.91129643,21.6222837 C9.99906043,21.0280424 9.30417606,20.8813982 9.16478618,20.8578943 C9.14052202,20.8532957 9.11625786,20.8486971 9.09250995,20.8430766 C6.66299598,20.2580325 5.43120245,19.4067807 5.43120245,18.3138469 C5.43120245,17.2433951 6.27528561,16.4953563 7.48436375,16.4953563 C7.88911066,16.4953563 8.30366648,16.5771092 8.68363297,16.7314178 C8.82302285,16.7876229 9.07908722,16.855069 9.51016333,16.855069 C9.69137017,16.855069 9.8715445,16.843317 10.0419099,16.8249226 C9.85089415,15.8571729 9.66142716,14.2389769 9.66142716,11.6295272 C9.66142716,5.26046707 15.1533884,3 19.8559899,3 L20.0242903,3.00204382 L20.1430298,3 C20.8446256,3 23.3159565,3.08328574 25.6349911,4.15731418 C28.7118936,5.58185807 30.3375926,8.16575997 30.3375926,11.6295272 C30.3375926,14.2384659 30.1481256,15.8571729 29.9571099,16.8249226 C30.1274753,16.842806 30.3081659,16.855069 30.4893727,16.855069 C30.9209651,16.855069 31.1770295,16.7876229 31.3164193,16.7314178 C31.6953533,16.5771092 32.1104254,16.4953563 32.5151723,16.4953563 C33.7242504,16.4953563 34.5688499,17.2433951 34.5688499,18.3138469 C34.5688499,19.4078026 33.3365401,20.2585435 30.9065098,20.8430766 C30.8827619,20.849208 30.8584978,20.8538066 30.8342336,20.8578943 C30.5286084,20.9156322 30.009252,21.0954886 30.0877234,21.6222837 C30.2493124,22.7111298 32.410888,26.9530823 37.0918067,27.5161552 C37.6323297,27.5810466 38.0288164,28.0506146 37.9983572,28.5886508 C37.8661949,30.8695561 35.5543879,31.502119 33.0138783,31.8393496 Z"
+                        id="Path" stroke="#5B00DB" stroke-width="1.8"></path>
+                    </g>
+                  </svg>
+                  <h6>Snapchat</h6>
+                </li>
+                <li><svg width="50" height="50" viewBox="0 0 40 40" version="1.1">
+                    <title>icons/social/Podcast</title>
+                    <g id="icons/social//Podcast" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <g id="Group" transform="translate(4.000000, 2.000000)" stroke="#5B00DB" stroke-width="2">
+                        <path
+                          d="M19.1020508,34.3521194 C19.6520647,32.3387375 20.5714286,27.3304138 20.5714286,25.0136719 C20.5714286,22.541748 18.3470285,21.9375 16,21.9375 C13.6529715,21.9375 11.4285714,22.541748 11.4285714,25.0136719 C11.4285714,27.3444214 12.3519113,32.353157 12.898019,34.3521194 C13.2652762,35.6887436 14.6530413,36 16,36 C17.3470285,36 18.7347238,35.6887436 19.1020508,34.3521194 Z"
+                          id="Path"></path>
+                        <path
+                          d="M23.031808,22.8510818 C25.0908203,20.9496231 26.3570033,18.2257004 26.2825753,15.2175751 C26.1500419,9.85933685 21.7400949,5.49982452 16.2973633,5.34786987 C10.4906529,5.18575287 5.71428571,9.7885437 5.71428571,15.46875 C5.71428571,18.3769684 6.96658761,21.0023575 8.96784319,22.8508072"
+                          id="Path"></path>
+                        <path
+                          d="M23.0186244,29.9115143 C28.2304688,27.4026489 32,22.0912399 32,15.75 C32,7.04566956 24.8439593,0 16,0 C7.15743583,0 0,7.0442276 0,15.75 C0,22.0775757 3.75725446,27.3970871 8.98137556,29.9115143"
+                          id="Path"></path>
+                        <path
+                          d="M16,10.25 C13.4753069,10.25 11.4285714,12.2647552 11.4285714,14.75 C11.4285714,17.2352448 13.4753069,19.25 16,19.25 C18.5246931,19.25 20.5714286,17.2352448 20.5714286,14.75 C20.5714286,12.2647552 18.5246931,10.25 16,10.25 Z"
+                          id="Path"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <h6>Podcasts</h6>
+                </li>
+                <li><svg width="50" height="50" viewBox="0 0 40 40" version="1.1">
+                    <title>icons/social/Image &amp; Likeness</title>
+                    <g id="icons/social/Image-&amp;-Likeness" stroke="none" stroke-width="1" fill="none"
+                      fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M31.4732779,25.5192013 L29.6786689,25.5192013 C27.2371381,25.5192013 25.2220965,23.5017637 25.2220965,20.9739767 L25.2220965,20.346223 C27.0550416,19.3327121 28.3488852,17.3967388 28.3488852,15.1708486 L28.3488852,7.95647255 C28.3488852,4.63800333 25.7156739,2 22.3900166,2 L17.6051913,2 C14.2843261,2 11.6535108,4.63800333 11.6535108,7.95647255 L11.6535108,15.1708486 C11.6535108,17.3967388 12.9401664,19.3279201 14.7707155,20.346223 L14.7707155,20.9739767 C14.7707155,23.5017637 12.7580699,25.5192013 10.2230948,25.5192013 L8.52911814,25.5192013 C5.64672213,25.5192013 3.22915141,27.1628619 2,29.6283527 C6.19540765,34.6479867 12.3555408,37.7891514 19.3494842,38 L20.6481198,38 C27.6420632,37.7891514 33.7974043,34.6479867 38,29.6283527 C36.7732446,27.1628619 34.3532779,25.5192013 31.4732779,25.5192013 Z"
+                        id="Stroke-1" stroke="#5B00DB" stroke-width="1.8"></path>
+                    </g>
+                  </svg>
+                  <h6>Image &amp; Likeness</h6>
+                </li>
+              </ul>
+            </div>
+          </div>
 
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">tabs2</div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">tabs3</div>
+    </div>
 
-
+  </div>
   <!-- Home Script Start  -->
-
 
 
   <!-- JavaScript Libraries -->
@@ -213,18 +296,14 @@
 
 
 
-
-  
   <!------ JS libraries ------>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-  integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-  integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-  <!-------- own JS --------->
-
-
   <script src="./js/sticky.js"></script>
   <script src="js/main.js"></script>
   <!-------- own JS --------->
@@ -232,7 +311,8 @@
 
 
 
-  
+
+
 
 </body>
 
