@@ -1,3 +1,4 @@
+
 (function ($) {
   "use strict";
 
@@ -111,3 +112,74 @@
     },
   });
 })(jQuery);
+
+
+
+
+
+// FLAG WITH NUMBER DROPDOWN
+
+
+   const info = document.querySelector(".alert-info");
+   const error = document.querySelector(".alert-error");
+
+   function process(event) {
+     event.preventDefault();
+
+     const phoneNumber = phoneInput.getNumber();
+
+     info.style.display = "none";
+     error.style.display = "none";
+
+     // OPTION 1 - Twilio Lookup API
+     // Pros: Free API call, updated data
+     // Pros: The Lookup API can return line type and carrier info too: https://www.twilio.com/docs/lookup/api
+     // Cons: Network request
+     const data = new URLSearchParams();
+     data.append("phone", phoneNumber);
+
+     fetch("./lookup", {
+       method: "POST",
+       body: data,
+     })
+       .then((response) => response.json())
+       .then((json) => {
+         if (json.success) {
+           info.style.display = "";
+           info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+         } else {
+           console.error(json.error);
+           error.style.display = "";
+           error.innerHTML = json.error;
+         }
+       })
+       .catch((err) => {
+         error.style.display = "";
+         error.innerHTML = `Something went wrong: ${err}`;
+       });
+
+     // OPTION 2 - intl-tel-input validity check
+     // Pros: No additional API call
+     // Cons: Requires plugin updates for updates on phone number validity
+     // if (phoneInput.isValidNumber()) {
+     //   info.style.display = "";
+     //   info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`
+     // } else {
+     //   error.style.display = "";
+     //   error.innerHTML = `Invalid phone number.`
+     // }
+   }
+
+   const form = document.getElementById("lookup");
+form.addEventListener("submit", process);
+   
+
+// FLAG WITH NUMBER DROPDOWN
+
+$("a.link").click(function(){
+    $("a.link").css("background-color", "black");
+  $(this).css("background-color", "red");
+});
+
+
+
