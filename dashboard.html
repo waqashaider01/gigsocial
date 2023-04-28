@@ -1,195 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="css/mystyle.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/mystyle.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid  cf">
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid  cf">
 
-            <div class="left">
- <a class="navbar-brand" href="#">
-    </a><img src="./images/logo.png"/>
- 
+      <div class="left">
+        <a class="navbar-brand login_header_logo" href="#">
+          <img class="login_header_logo" src="./images/logo.png" />
+        </a>
+
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse nav-collpase2 navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-nav2 mb-2 mb-lg-0">
+          <li class="nav-item nav-item2">
+            <a class="nav-link active nvlink2" aria-current="page" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item nav-item2">
+            <a class="nav-link nvlink2" href="#">Gigs</a>
+          </li>
+          <li class="nav-item nav-item2">
+            <a class="nav-link nvlink2" href="#">Hires</a>
+          </li>
+
+          <li class="nav-item nav-item2">
+            <a class="nav-link nvlink2" href="#">Offers</a>
+          </li>
+          <li class="nav-item nav-item2">
+            <a class="nav-link nvlink2" href="#">Alerts</a>
+          </li>
+          <li class="nav-item2 display">
+            <img alt="Cart" src="https://www.gigsocial.com/icons/basket.svg" decoding="async">
+          </li>
+          <li class="nav-item2">
+            <svg width="30px" height="30px" viewBox="0 0 70 70" version="1.1" style="width: 100%; height: 100%;">
+              <title>Timeline/Avatar</title>
+              <g id="DESKTOP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Dashboard-Direct---Advertiser---Desktop" transform="translate(-164.000000, -245.000000)">
+                  <g id="Group-13" transform="translate(149.000000, 196.000000)">
+                    <g id="Group-12" transform="translate(1.000000, 0.000000)">
+                      <g id="Timeline/Avatar" transform="translate(14.000000, 49.000000)">
+                        <circle id="Oval" fill="#EBEDF2" fill-rule="nonzero" cx="35" cy="35" r="35"></circle>
+                        <path
+                          d="M46.8982141,42.4436162 L45.0371381,42.4436162 C42.5051803,42.4436162 40.4155075,40.3514587 40.4155075,37.7300499 L40.4155075,37.079046 C42.3163394,36.0279978 43.6581032,34.0203217 43.6581032,31.7119911 L43.6581032,24.230416 C43.6581032,20.7890405 40.9273655,18.0533333 37.4785358,18.0533333 L32.5164947,18.0533333 C29.0726345,18.0533333 26.3443816,20.7890405 26.3443816,24.230416 L26.3443816,31.7119911 C26.3443816,34.0203217 27.6786911,36.0230283 29.5770383,37.079046 L29.5770383,37.7300499 C29.5770383,40.3514587 27.4898502,42.4436162 24.8609872,42.4436162 L23.1042707,42.4436162 C20.1151192,42.4436162 17.6080089,44.1481531 16.3333333,46.7049584 C20.6841265,51.9105047 27.0724126,55.1680089 34.325391,55.3866667 L35.6721242,55.3866667 C42.9251026,55.1680089 49.3084193,51.9105047 53.6666667,46.7049584 C52.3944759,44.1481531 49.8848808,42.4436162 46.8982141,42.4436162 Z"
+                          id="Stroke-1" stroke="#9F9EAD" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <LI><input type="checkbox" id="check">
+            <label for="check" class="show-btn">
+              <i class="fa fa-bars" id="btn"></i>
+            </label>
+
+            <label for="check" class="hide-btn">
+              <i class="fa fa-times" id="cancel"></i>
+            </label>
+            <div id="mySidebar" class="sidebar">
+              <div class="coloumn"
+                style="display: flex; flex-direction: column; justify-content: left; align-items: first baseline;">
+                <svg class="hover-icon" style="margin-bottom:1.5rem;" width="40" height="40" viewBox="0 0 40 40"
+                  version="1.1">
+                  <title>Group 2</title>
+                  <g id="Influencer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Shoutout---Influencer-Menu---Mobile" transform="translate(-354.000000, -106.000000)">
+                      <g id="Group-2" transform="translate(354.000000, 106.000000)">
+                        <circle id="Oval" fill="#5B00DB" cx="12" cy="20" r="2"></circle>
+                        <circle id="Oval-Copy" fill="#5B00DB" cx="20" cy="20" r="2"></circle>
+                        <circle id="Oval-Copy-2" fill="#5B00DB" cx="28" cy="20" r="2"></circle>
+                        <circle id="Oval" stroke="#5B00DB" stroke-width="2" cx="20" cy="20" r="19"></circle>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1">
+                  <title>Timeline/Avatar</title>
+                  <g id="DESKTOP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Dashboard-Direct---Advertiser---Desktop" transform="translate(-164.000000, -245.000000)">
+                      <g id="Group-13" transform="translate(149.000000, 196.000000)">
+                        <g id="Group-12" transform="translate(1.000000, 0.000000)">
+                          <g id="Timeline/Avatar" transform="translate(14.000000, 49.000000)">
+                            <circle id="Oval" fill="#EBEDF2" fill-rule="nonzero" cx="35" cy="35" r="35"></circle>
+                            <path
+                              d="M46.8982141,42.4436162 L45.0371381,42.4436162 C42.5051803,42.4436162 40.4155075,40.3514587 40.4155075,37.7300499 L40.4155075,37.079046 C42.3163394,36.0279978 43.6581032,34.0203217 43.6581032,31.7119911 L43.6581032,24.230416 C43.6581032,20.7890405 40.9273655,18.0533333 37.4785358,18.0533333 L32.5164947,18.0533333 C29.0726345,18.0533333 26.3443816,20.7890405 26.3443816,24.230416 L26.3443816,31.7119911 C26.3443816,34.0203217 27.6786911,36.0230283 29.5770383,37.079046 L29.5770383,37.7300499 C29.5770383,40.3514587 27.4898502,42.4436162 24.8609872,42.4436162 L23.1042707,42.4436162 C20.1151192,42.4436162 17.6080089,44.1481531 16.3333333,46.7049584 C20.6841265,51.9105047 27.0724126,55.1680089 34.325391,55.3866667 L35.6721242,55.3866667 C42.9251026,55.1680089 49.3084193,51.9105047 53.6666667,46.7049584 C52.3944759,44.1481531 49.8848808,42.4436162 46.8982141,42.4436162 Z"
+                              id="Stroke-1" stroke="#9F9EAD" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <h3>Alright Tech</h3>
+                <hr>
+                <p>Profile</p>
+                <p>
+                  wallet
+                </p>
+                <p>Account information</p>
+                <p>Referral Program</p>
+                <p>Create an influencer account</p>
+                <hr>
+                <p>FAQ</p>
+                <p>Support</p>
+                <p>Terms</p>
+                <p>Privacy Policy</p>
+                <hr>
+                <p>Log out</p>
+              </div>
+
+              <hr>
+
             </div>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          <div class="collapse nav-collpase2 navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav navbar-nav2 mb-2 mb-lg-0">
-              <li class="nav-item nav-item2">
-                <a class="nav-link active nvlink2" aria-current="page" href="#">Dashboard</a>
-              </li>
-              <li class="nav-item nav-item2">
-                <a class="nav-link nvlink2" href="#">Gigs</a>
-              </li>
-              <li class="nav-item nav-item2">
-                <a class="nav-link nvlink2" href="#">Hires</a>
-              </li>
-             
-              <li class="nav-item nav-item2">
-                <a class="nav-link nvlink2" href="#">Offers</a>
-              </li>
-              <li class="nav-item nav-item2">
-                <a class="nav-link nvlink2" href="#">Alerts</a>
-              </li>
-              <li class="nav-item2 display" >
-                <img alt="Cart" src="https://www.gigsocial.com/icons/basket.svg" decoding="async" >
-              </li>
-              <li class="nav-item2">
-                <svg width="30px" height="30px" viewBox="0 0 70 70" version="1.1" style="width: 100%; height: 100%;"><title>Timeline/Avatar</title><g id="DESKTOP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dashboard-Direct---Advertiser---Desktop" transform="translate(-164.000000, -245.000000)"><g id="Group-13" transform="translate(149.000000, 196.000000)"><g id="Group-12" transform="translate(1.000000, 0.000000)"><g id="Timeline/Avatar" transform="translate(14.000000, 49.000000)"><circle id="Oval" fill="#EBEDF2" fill-rule="nonzero" cx="35" cy="35" r="35"></circle><path d="M46.8982141,42.4436162 L45.0371381,42.4436162 C42.5051803,42.4436162 40.4155075,40.3514587 40.4155075,37.7300499 L40.4155075,37.079046 C42.3163394,36.0279978 43.6581032,34.0203217 43.6581032,31.7119911 L43.6581032,24.230416 C43.6581032,20.7890405 40.9273655,18.0533333 37.4785358,18.0533333 L32.5164947,18.0533333 C29.0726345,18.0533333 26.3443816,20.7890405 26.3443816,24.230416 L26.3443816,31.7119911 C26.3443816,34.0203217 27.6786911,36.0230283 29.5770383,37.079046 L29.5770383,37.7300499 C29.5770383,40.3514587 27.4898502,42.4436162 24.8609872,42.4436162 L23.1042707,42.4436162 C20.1151192,42.4436162 17.6080089,44.1481531 16.3333333,46.7049584 C20.6841265,51.9105047 27.0724126,55.1680089 34.325391,55.3866667 L35.6721242,55.3866667 C42.9251026,55.1680089 49.3084193,51.9105047 53.6666667,46.7049584 C52.3944759,44.1481531 49.8848808,42.4436162 46.8982141,42.4436162 Z" id="Stroke-1" stroke="#9F9EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></g></g></g></g></svg>
-              </li>
-              <LI><input type="checkbox" id="check">
-                <label for="check" class="show-btn">
-                    <i class="fa fa-bars" id="btn"></i>
-                </label>
-                
-                <label for="check" class="hide-btn">
-                    <i class="fa fa-times" id="cancel"></i>
-                </label>
-                    <div id="mySidebar" class="sidebar">
-                        <div class="coloumn" style="display: flex; flex-direction: column; justify-content: left; align-items: first baseline;">
-                            <svg class="hover-icon" style="margin-bottom:1.5rem;" width="40" height="40" viewBox="0 0 40 40" version="1.1"><title>Group 2</title><g id="Influencer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Shoutout---Influencer-Menu---Mobile" transform="translate(-354.000000, -106.000000)"><g id="Group-2" transform="translate(354.000000, 106.000000)"><circle id="Oval" fill="#5B00DB" cx="12" cy="20" r="2"></circle><circle id="Oval-Copy" fill="#5B00DB" cx="20" cy="20" r="2"></circle><circle id="Oval-Copy-2" fill="#5B00DB" cx="28" cy="20" r="2"></circle><circle id="Oval" stroke="#5B00DB" stroke-width="2" cx="20" cy="20" r="19"></circle></g></g></g></svg>
-                            <svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1"><title>Timeline/Avatar</title><g id="DESKTOP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dashboard-Direct---Advertiser---Desktop" transform="translate(-164.000000, -245.000000)"><g id="Group-13" transform="translate(149.000000, 196.000000)"><g id="Group-12" transform="translate(1.000000, 0.000000)"><g id="Timeline/Avatar" transform="translate(14.000000, 49.000000)"><circle id="Oval" fill="#EBEDF2" fill-rule="nonzero" cx="35" cy="35" r="35"></circle><path d="M46.8982141,42.4436162 L45.0371381,42.4436162 C42.5051803,42.4436162 40.4155075,40.3514587 40.4155075,37.7300499 L40.4155075,37.079046 C42.3163394,36.0279978 43.6581032,34.0203217 43.6581032,31.7119911 L43.6581032,24.230416 C43.6581032,20.7890405 40.9273655,18.0533333 37.4785358,18.0533333 L32.5164947,18.0533333 C29.0726345,18.0533333 26.3443816,20.7890405 26.3443816,24.230416 L26.3443816,31.7119911 C26.3443816,34.0203217 27.6786911,36.0230283 29.5770383,37.079046 L29.5770383,37.7300499 C29.5770383,40.3514587 27.4898502,42.4436162 24.8609872,42.4436162 L23.1042707,42.4436162 C20.1151192,42.4436162 17.6080089,44.1481531 16.3333333,46.7049584 C20.6841265,51.9105047 27.0724126,55.1680089 34.325391,55.3866667 L35.6721242,55.3866667 C42.9251026,55.1680089 49.3084193,51.9105047 53.6666667,46.7049584 C52.3944759,44.1481531 49.8848808,42.4436162 46.8982141,42.4436162 Z" id="Stroke-1" stroke="#9F9EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></g></g></g></g></svg>
-                            <h3>Alright Tech</h3>
-                           <hr>
-                         <p >Profile</p>
-                         <p>
-                            wallet
-                         </p>
-                         <p>Account information</p>
-                         <p>Referral Program</p>
-                         <p>Create an influencer account</p>
-                         <hr>
-                         <p>FAQ</p>
-                         <p>Support</p>
-                         <p>Terms</p>
-                         <p>Privacy Policy</p>
-                         <hr>
-                         <p>Log out</p>
-                        </div>
-                        
-                      <hr>
-                     
-                      </div>
-                      </LI>
-             
-            </ul>
-           
+          </LI>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="discover-humna">
+    <div class="custome-container">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-12 col-12 ">
+
+          </div>
+          <div class="col-lg-6 col-md-12 col-12 discover-col">
+
+
+            <button class="dis-btn">
+              Discover
+            </button>
+
+            <button class="post-btn">
+              post a Gig
+            </button>
+
+
           </div>
         </div>
-      </nav>
 
 
-      <div class="discover-humna">
-       <div class="custome-container">
-        <div class="container">
-            <div class="row">
-               
-                    <div class="col-lg-6 col-md-12 col-12 ">
+      </div>
 
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-12 discover-col">
-                       
-                        
-                                    <button class="dis-btn">
-                                        Discover
-                                    </button>
-                               
-                                    <button class="post-btn">
-                                        post a Gig
-                                     </button>
-                                 
-                          
-                            </div>
-                        </div>
-                       
-                       
-                </div>
-               
-      
-        </div>
+
     </div>
- 
-       </div>
-          
+  </div>
 
-      </div>
+  </div>
 
-<div class="dashboard-sec">
+
+  </div>
+
+  <div class="dashboard-sec">
     <div class="container">
-        <div class="row gy-5">
-            <div class="col-lg-4 col-md-4 col-12">
-                <h5 class="Dashboard">DASHBOARD</h5>
-                <div class="box shadow">
-                    <div class="container">
-                        <div class="row">
-                    <div class="col-lg-4 col-md-4 col-5 svg">
-                        <svg width="40px" height="40px" viewBox="0 0 70 70" version="1.1" ><title>Timeline/Avatar</title><g id="DESKTOP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dashboard-Direct---Advertiser---Desktop" transform="translate(-164.000000, -245.000000)"><g id="Group-13" transform="translate(149.000000, 196.000000)"><g id="Group-12" transform="translate(1.000000, 0.000000)"><g id="Timeline/Avatar" transform="translate(14.000000, 49.000000)"><circle id="Oval" fill="#EBEDF2" fill-rule="nonzero" cx="35" cy="35" r="35"></circle><path d="M46.8982141,42.4436162 L45.0371381,42.4436162 C42.5051803,42.4436162 40.4155075,40.3514587 40.4155075,37.7300499 L40.4155075,37.079046 C42.3163394,36.0279978 43.6581032,34.0203217 43.6581032,31.7119911 L43.6581032,24.230416 C43.6581032,20.7890405 40.9273655,18.0533333 37.4785358,18.0533333 L32.5164947,18.0533333 C29.0726345,18.0533333 26.3443816,20.7890405 26.3443816,24.230416 L26.3443816,31.7119911 C26.3443816,34.0203217 27.6786911,36.0230283 29.5770383,37.079046 L29.5770383,37.7300499 C29.5770383,40.3514587 27.4898502,42.4436162 24.8609872,42.4436162 L23.1042707,42.4436162 C20.1151192,42.4436162 17.6080089,44.1481531 16.3333333,46.7049584 C20.6841265,51.9105047 27.0724126,55.1680089 34.325391,55.3866667 L35.6721242,55.3866667 C42.9251026,55.1680089 49.3084193,51.9105047 53.6666667,46.7049584 C52.3944759,44.1481531 49.8848808,42.4436162 46.8982141,42.4436162 Z" id="Stroke-1" stroke="#9F9EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></g></g></g></g></svg>
-                    </div>
-                    <div class="col-lg-5 col-md-8 col-7 c2">
-                        <div class="parent-div">
-                            <div class="child-text">
-                                <h6>Alright Tech</h6>
-                            </div>
-                            <div class="child-stars">
-                                <span class="MuiRating-root MuiRating-readOnly" role="img" aria-label="null Stars"><span><span class="MuiRating-icon MuiRating-iconEmpty"><svg width="42px" height="41px" viewBox="0 0 42 41" version="1.1"><title>Stroke 1 Copy 4</title><g id="Advertiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="Shoutout---Advertiser-Rate---Mobile" transform="translate(-288.000000, -714.000000)" stroke="#C8CCD9" stroke-width="2"><g id="Group-5" transform="translate(0.000000, 557.000000)"><g id="Group" transform="translate(85.000000, 158.000000)"><path d="M243.866733,14.4989344 C243.539761,13.4514829 242.632984,12.6967855 241.579829,12.5294974 L231.194661,11.0239047 L226.539109,1.57592981 C226.056255,0.600716308 225.094349,0 223.989867,0 C222.917702,0 221.953895,0.600716308 221.486249,1.57592981 L216.826895,11.0239047 L206.424618,12.5294974 C205.354354,12.6967855 204.477993,13.4514829 204.145318,14.4989344 C203.795534,15.4608409 204.093991,16.6185505 204.860094,17.3675449 L212.374751,24.6502797 L210.60682,35.050656 C210.418621,36.1304245 210.836841,37.1474601 211.728411,37.8242164 C212.602871,38.4591507 213.752977,38.5542008 214.682566,38.0086135 L223.989867,33.166764 L233.299069,38.0086135 C233.715388,38.2424366 234.164024,38.3698037 234.62977,38.3698037 C235.220981,38.3698037 235.796984,38.1530896 236.285541,37.8242164 C237.142893,37.1474601 237.57442,36.1304245 237.409033,35.050656 L235.627795,24.6502797 L243.153858,17.3675449 C243.919961,16.6185505 244.188002,15.4608409 243.866733,14.4989344 Z" id="Stroke-1-Copy-4"></path></g></g></g></g></svg></span></span><span><span class="MuiRating-icon MuiRating-iconEmpty"><svg width="42px" height="41px" viewBox="0 0 42 41" version="1.1"><title>Stroke 1 Copy 4</title><g id="Advertiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="Shoutout---Advertiser-Rate---Mobile" transform="translate(-288.000000, -714.000000)" stroke="#C8CCD9" stroke-width="2"><g id="Group-5" transform="translate(0.000000, 557.000000)"><g id="Group" transform="translate(85.000000, 158.000000)"><path d="M243.866733,14.4989344 C243.539761,13.4514829 242.632984,12.6967855 241.579829,12.5294974 L231.194661,11.0239047 L226.539109,1.57592981 C226.056255,0.600716308 225.094349,0 223.989867,0 C222.917702,0 221.953895,0.600716308 221.486249,1.57592981 L216.826895,11.0239047 L206.424618,12.5294974 C205.354354,12.6967855 204.477993,13.4514829 204.145318,14.4989344 C203.795534,15.4608409 204.093991,16.6185505 204.860094,17.3675449 L212.374751,24.6502797 L210.60682,35.050656 C210.418621,36.1304245 210.836841,37.1474601 211.728411,37.8242164 C212.602871,38.4591507 213.752977,38.5542008 214.682566,38.0086135 L223.989867,33.166764 L233.299069,38.0086135 C233.715388,38.2424366 234.164024,38.3698037 234.62977,38.3698037 C235.220981,38.3698037 235.796984,38.1530896 236.285541,37.8242164 C237.142893,37.1474601 237.57442,36.1304245 237.409033,35.050656 L235.627795,24.6502797 L243.153858,17.3675449 C243.919961,16.6185505 244.188002,15.4608409 243.866733,14.4989344 Z" id="Stroke-1-Copy-4"></path></g></g></g></g></svg></span></span><span><span class="MuiRating-icon MuiRating-iconEmpty"><svg width="42px" height="41px" viewBox="0 0 42 41" version="1.1"><title>Stroke 1 Copy 4</title><g id="Advertiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="Shoutout---Advertiser-Rate---Mobile" transform="translate(-288.000000, -714.000000)" stroke="#C8CCD9" stroke-width="2"><g id="Group-5" transform="translate(0.000000, 557.000000)"><g id="Group" transform="translate(85.000000, 158.000000)"><path d="M243.866733,14.4989344 C243.539761,13.4514829 242.632984,12.6967855 241.579829,12.5294974 L231.194661,11.0239047 L226.539109,1.57592981 C226.056255,0.600716308 225.094349,0 223.989867,0 C222.917702,0 221.953895,0.600716308 221.486249,1.57592981 L216.826895,11.0239047 L206.424618,12.5294974 C205.354354,12.6967855 204.477993,13.4514829 204.145318,14.4989344 C203.795534,15.4608409 204.093991,16.6185505 204.860094,17.3675449 L212.374751,24.6502797 L210.60682,35.050656 C210.418621,36.1304245 210.836841,37.1474601 211.728411,37.8242164 C212.602871,38.4591507 213.752977,38.5542008 214.682566,38.0086135 L223.989867,33.166764 L233.299069,38.0086135 C233.715388,38.2424366 234.164024,38.3698037 234.62977,38.3698037 C235.220981,38.3698037 235.796984,38.1530896 236.285541,37.8242164 C237.142893,37.1474601 237.57442,36.1304245 237.409033,35.050656 L235.627795,24.6502797 L243.153858,17.3675449 C243.919961,16.6185505 244.188002,15.4608409 243.866733,14.4989344 Z" id="Stroke-1-Copy-4"></path></g></g></g></g></svg></span></span><span><span class="MuiRating-icon MuiRating-iconEmpty"><svg width="42px" height="41px" viewBox="0 0 42 41" version="1.1"><title>Stroke 1 Copy 4</title><g id="Advertiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="Shoutout---Advertiser-Rate---Mobile" transform="translate(-288.000000, -714.000000)" stroke="#C8CCD9" stroke-width="2"><g id="Group-5" transform="translate(0.000000, 557.000000)"><g id="Group" transform="translate(85.000000, 158.000000)"><path d="M243.866733,14.4989344 C243.539761,13.4514829 242.632984,12.6967855 241.579829,12.5294974 L231.194661,11.0239047 L226.539109,1.57592981 C226.056255,0.600716308 225.094349,0 223.989867,0 C222.917702,0 221.953895,0.600716308 221.486249,1.57592981 L216.826895,11.0239047 L206.424618,12.5294974 C205.354354,12.6967855 204.477993,13.4514829 204.145318,14.4989344 C203.795534,15.4608409 204.093991,16.6185505 204.860094,17.3675449 L212.374751,24.6502797 L210.60682,35.050656 C210.418621,36.1304245 210.836841,37.1474601 211.728411,37.8242164 C212.602871,38.4591507 213.752977,38.5542008 214.682566,38.0086135 L223.989867,33.166764 L233.299069,38.0086135 C233.715388,38.2424366 234.164024,38.3698037 234.62977,38.3698037 C235.220981,38.3698037 235.796984,38.1530896 236.285541,37.8242164 C237.142893,37.1474601 237.57442,36.1304245 237.409033,35.050656 L235.627795,24.6502797 L243.153858,17.3675449 C243.919961,16.6185505 244.188002,15.4608409 243.866733,14.4989344 Z" id="Stroke-1-Copy-4"></path></g></g></g></g></svg></span></span><span><span class="MuiRating-icon MuiRating-iconEmpty"><svg width="42px" height="41px" viewBox="0 0 42 41" version="1.1"><title>Stroke 1 Copy 4</title><g id="Advertiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="Shoutout---Advertiser-Rate---Mobile" transform="translate(-288.000000, -714.000000)" stroke="#C8CCD9" stroke-width="2"><g id="Group-5" transform="translate(0.000000, 557.000000)"><g id="Group" transform="translate(85.000000, 158.000000)"><path d="M243.866733,14.4989344 C243.539761,13.4514829 242.632984,12.6967855 241.579829,12.5294974 L231.194661,11.0239047 L226.539109,1.57592981 C226.056255,0.600716308 225.094349,0 223.989867,0 C222.917702,0 221.953895,0.600716308 221.486249,1.57592981 L216.826895,11.0239047 L206.424618,12.5294974 C205.354354,12.6967855 204.477993,13.4514829 204.145318,14.4989344 C203.795534,15.4608409 204.093991,16.6185505 204.860094,17.3675449 L212.374751,24.6502797 L210.60682,35.050656 C210.418621,36.1304245 210.836841,37.1474601 211.728411,37.8242164 C212.602871,38.4591507 213.752977,38.5542008 214.682566,38.0086135 L223.989867,33.166764 L233.299069,38.0086135 C233.715388,38.2424366 234.164024,38.3698037 234.62977,38.3698037 C235.220981,38.3698037 235.796984,38.1530896 236.285541,37.8242164 C237.142893,37.1474601 237.57442,36.1304245 237.409033,35.050656 L235.627795,24.6502797 L243.153858,17.3675449 C243.919961,16.6185505 244.188002,15.4608409 243.866733,14.4989344 Z" id="Stroke-1-Copy-4"></path></g></g></g></g></svg></span></span>
-                                </span>
-                            </div>
-                          
-                        </div>
-                        
-                    </div>
-                    <div class="col-lg-3 col-md-0 col-0">
-                        
-                    </div>
-                        </div>
-                    </div>
+      <div class="row gy-5">
+        <div class="col-lg-4 col-md-4 col-12">
+          <h5 class="Dashboard">DASHBOARD</h5>
+          <div class="box shadow">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-5 svg">
+                  <svg width="40px" height="40px" viewBox="0 0 70 70" version="1.1">
+                    <title>Timeline/Avatar</title>
+                    <g id="DESKTOP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Dashboard-Direct---Advertiser---Desktop" transform="translate(-164.000000, -245.000000)">
+                        <g id="Group-13" transform="translate(149.000000, 196.000000)">
+                          <g id="Group-12" transform="translate(1.000000, 0.000000)">
+                            <g id="Timeline/Avatar" transform="translate(14.000000, 49.000000)">
+                              <circle id="Oval" fill="#EBEDF2" fill-rule="nonzero" cx="35" cy="35" r="35"></circle>
+                              <path
+                                d="M46.8982141,42.4436162 L45.0371381,42.4436162 C42.5051803,42.4436162 40.4155075,40.3514587 40.4155075,37.7300499 L40.4155075,37.079046 C42.3163394,36.0279978 43.6581032,34.0203217 43.6581032,31.7119911 L43.6581032,24.230416 C43.6581032,20.7890405 40.9273655,18.0533333 37.4785358,18.0533333 L32.5164947,18.0533333 C29.0726345,18.0533333 26.3443816,20.7890405 26.3443816,24.230416 L26.3443816,31.7119911 C26.3443816,34.0203217 27.6786911,36.0230283 29.5770383,37.079046 L29.5770383,37.7300499 C29.5770383,40.3514587 27.4898502,42.4436162 24.8609872,42.4436162 L23.1042707,42.4436162 C20.1151192,42.4436162 17.6080089,44.1481531 16.3333333,46.7049584 C20.6841265,51.9105047 27.0724126,55.1680089 34.325391,55.3866667 L35.6721242,55.3866667 C42.9251026,55.1680089 49.3084193,51.9105047 53.6666667,46.7049584 C52.3944759,44.1481531 49.8848808,42.4436162 46.8982141,42.4436162 Z"
+                                id="Stroke-1" stroke="#9F9EAD" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
                 </div>
-                <div class="hover"><div style="position: relative;padding: 20px;border-radius: 10px;background-image: linear-gradient(117deg, rgb(148, 0, 239), rgb(91, 0, 219) 99%);z-index: 1;margin-top: 25px;overflow: hidden;"><h2 style="color: rgb(255, 255, 255); font-size: 24px;">Get full access</h2><p style="color: rgb(255, 255, 255);">Complete your profile to be matched with the world’s largest marketplace of influencers.</p><button class="MuiButtonBase-root MuiButton-root MuiButton-contained" tabindex="0" type="button" style="padding: 0px 10px; height: 30px; background-color: rgb(18, 223, 199); color: rgb(50, 54, 67); margin-top: 30px;"><span class="MuiButton-label">Complete profile<span class="MuiButton-endIcon MuiButton-iconSizeMedium"><svg width="24" height="24" viewBox="0 0 24 24" style="filter: invert(29%) sepia(22%) saturate(453%) hue-rotate(18deg) brightness(10%) contrast(60%);"><g stroke="#12DFC7" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="m10.225 16.904 4.8-4.58-4.8-4.828"></path><path d="M22 12c0 5.515-4.468 10-10.012 10C6.468 22 2 17.515 2 12S6.467 2 11.988 2C17.532 2 22 6.485 22 12z"></path></g></svg></span></span><span class="MuiTouchRipple-root"></span></button><svg width="479px" height="514px" viewBox="0 0 479 514" version="1.1" style="position: absolute; top: -30px; right: -60px; width: 225px; height: auto; z-index: -1;"><title>Group 4 Copy 4</title><g id="MOBILE---Home-/-Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="favicon" transform="translate(-17.000000, 1.000000)" fill="#5B00DB"><g id="Group-2" transform="translate(17.000000, -1.000000)"><path d="M236.494878,0.00797809387 C183.706307,0.589049264 119.665025,30.5175387 44.3710314,89.7921168 L44.3710314,89.7921168 C16.5644919,109.176226 0,140.88383 0,174.722915 L0,174.722915 C0,208.56466 16.5658249,240.272264 44.3723644,259.655043 L44.3723644,259.655043 L180.043378,354.230027 C215.330398,378.82915 262.260681,378.82782 297.549034,354.228698 L297.549034,354.228698 L337.560006,326.334622 C348.816716,318.488167 363.785674,318.488167 375.041051,326.334622 L375.041051,326.334622 C382.273604,331.374118 384.041088,341.309504 378.986565,348.52436 L378.986565,348.52436 C377.914878,350.056155 376.579268,351.388496 375.042384,352.45889 L375.042384,352.45889 L316.992684,392.929101 C270.87283,425.08082 209.533425,425.082149 163.410906,392.930431 L163.410906,392.930431 L46.5397309,311.462125 C33.1436463,302.125096 14.6957048,305.386807 5.33444087,318.750114 L5.33444087,318.750114 C1.86212241,323.708499 0,329.610959 0,335.658354 L0,335.658354 C0,371.151564 17.3749217,404.409578 46.5397309,424.740421 L46.5397309,424.740421 L120.804692,476.508942 C192.515732,526.497019 287.88919,526.497019 359.600231,476.508942 L359.600231,476.508942 L434.730272,424.138075 C462.471498,404.799175 479,373.163374 479,339.40274 L479,339.40274 L479,310.748086 C479,294.943482 471.260929,280.13348 458.274058,271.082333 L458.274058,271.082333 L439.923421,258.289459 C438.341217,257.187153 436.76701,256.072879 435.200801,254.945308 L435.200801,254.945308 L361.014484,201.563882 C336.442999,183.880437 303.856523,180.476451 278.566582,201.123757 L278.566582,201.123757 C253.275307,221.771064 273.602699,258.159151 256.923574,269.273965 L256.923574,269.273965 C241.093534,279.826324 231.556322,276.866451 220.667504,269.276624 L220.667504,269.276624 L161.911344,228.31709 C132.240016,207.632552 124.995467,166.868482 145.73074,137.268424 L145.73074,137.268424 C150.134786,130.983016 155.611852,125.519351 161.912677,121.12741 L161.912677,121.12741 C208.089847,88.9384608 269.502564,88.9397905 315.678402,121.12874 L315.678402,121.12874 L432.45627,202.53588 C445.853688,211.874239 464.302962,208.612528 473.662893,195.247891 L473.662893,195.247891 C477.136545,190.290836 479,184.388376 479,178.338321 L479,178.338321 C479,142.842452 461.623745,109.584438 432.45627,89.2535955 L432.45627,89.2535955 C355.345475,29.7476527 290.536417,0 238.014434,0 L238.014434,0 C237.509249,0 236.997398,0 236.494878,0.00797809387 L236.494878,0.00797809387 Z" id="Clip-2"></path></g></g></g></svg></div></div>
-                
-                        </div>
-                
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <h5 class="Dashboard">ACTIVE GIGS</h5>
-                            <div class="active-box">
-                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>
-                                <p>No active Gigs</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <h5 class="Dashboard">GIG REQUEST</h5>
-                            <div class="active-box">
-                                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>
-                                <p>No active Gigs</p>
-                            </div>
-                        </div>
-                    
-        </div>
-        
-      </div>
-</div>
-  
-    
+                <div class="col-lg-5 col-md-8 col-7 c2">
+                  <div class="parent-div">
+                    <div class="child-text">
+                      <h6>Alright Tech</h6>
+                    </div>
+                    <div class="child-stars">
+                      <span class="MuiRating-root MuiRating-readOnly" role="img" aria-label="null Stars"><span><span
+                            class="MuiRating-icon MuiRating-iconEmpty"><svg width="42px" height="41px"
+                              viewBox="0 0 42 41" version="1.1">
+                              <title>Stroke 1 Copy 4</title>
+                              <g id="Advertiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Shoutout---Advertiser-Rate---Mobile"
+                                  transform="translate(-288.000000, -714.000000)" stroke="#C8CCD9" stroke-width="2">
+                                  <g id="Group-5" transform="translate(0.000000, 557.000000)">
+                                    <g id="Group" transform="translate(85.000000, 158.000000)">
+                                      <path
+                                        d="M243.866733,14.4989344 C243.539761,13.4514829 242.632984,12.6967855 241.579829,12.5294974 L231.194661,11.0239047 L226.539109,1.57592981 C226.056255,0.600716308 225.094349,0 223.989867,0 C222.917702,0 221.953895,0.600716308 221.486249,1.57592981 L216.826895,11.0239047 L206.424618,12.5294974 C205.354354,12.6967855 204.477993,13.4514829 204.145318,14.4989344 C203.795534,15.4608409 204.093991,16.6185505 204.860094,17.3675449 L212.374751,24.6502797 L210.60682,35.050656 C210.418621,36.1304245 210.836841,37.1474601 211.728411,37.8242164 C212.602871,38.4591507 213.752977,38.5542008 214.682566,38.0086135 L223.989867,33.166764 L233.299069,38.0086135 C233.715388,38.2424366 234.164024,38.3698037 234.62977,38.3698037 C235.220981,38.3698037 235.796984,38.1530896 236.285541,37.8242164 C237.142893,37.1474601 237.57442,36.1304245 237.409033,35.050656 L235.627795,24.6502797 L243.153858,17.3675449 C243.919961,16.6185505 244.188002,15.4608409 243.866733,14.4989344 Z"
+                                        id="Stroke-1-Copy-4"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg></span></span><span><span class="MuiRating-icon MuiRating-iconEmpty"><svg width="42px"
+                              height="41px" viewBox="0 0 42 41" version="1.1">
+                              <title>Stroke 1 Copy 4</title>
+                              <g id="Advertiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Shoutout---Advertiser-Rate---Mobile"
+                                  transform="translate(-288.000000, -714.000000)" stroke="#C8CCD9" stroke-width="2">
+                                  <g id="Group-5" transform="translate(0.000000, 557.000000)">
+                                    <g id="Group" transform="translate(85.000000, 158.000000)">
+                                      <path
+                                        d="M243.866733,14.4989344 C243.539761,13.4514829 242.632984,12.6967855 241.579829,12.5294974 L231.194661,11.0239047 L226.539109,1.57592981 C226.056255,0.600716308 225.094349,0 223.989867,0 C222.917702,0 221.953895,0.600716308 221.486249,1.57592981 L216.826895,11.0239047 L206.424618,12.5294974 C205.354354,12.6967855 204.477993,13.4514829 204.145318,14.4989344 C203.795534,15.4608409 204.093991,16.6185505 204.860094,17.3675449 L212.374751,24.6502797 L210.60682,35.050656 C210.418621,36.1304245 210.836841,37.1474601 211.728411,37.8242164 C212.602871,38.4591507 213.752977,38.5542008 214.682566,38.0086135 L223.989867,33.166764 L233.299069,38.0086135 C233.715388,38.2424366 234.164024,38.3698037 234.62977,38.3698037 C235.220981,38.3698037 235.796984,38.1530896 236.285541,37.8242164 C237.142893,37.1474601 237.57442,36.1304245 237.409033,35.050656 L235.627795,24.6502797 L243.153858,17.3675449 C243.919961,16.6185505 244.188002,15.4608409 243.866733,14.4989344 Z"
+                                        id="Stroke-1-Copy-4"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg></span></span><span><span class="MuiRating-icon MuiRating-iconEmpty"><svg width="42px"
+                              height="41px" viewBox="0 0 42 41" version="1.1">
+                              <title>Stroke 1 Copy 4</title>
+                              <g id="Advertiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Shoutout---Advertiser-Rate---Mobile"
+                                  transform="translate(-288.000000, -714.000000)" stroke="#C8CCD9" stroke-width="2">
+                                  <g id="Group-5" transform="translate(0.000000, 557.000000)">
+                                    <g id="Group" transform="translate(85.000000, 158.000000)">
+                                      <path
+                                        d="M243.866733,14.4989344 C243.539761,13.4514829 242.632984,12.6967855 241.579829,12.5294974 L231.194661,11.0239047 L226.539109,1.57592981 C226.056255,0.600716308 225.094349,0 223.989867,0 C222.917702,0 221.953895,0.600716308 221.486249,1.57592981 L216.826895,11.0239047 L206.424618,12.5294974 C205.354354,12.6967855 204.477993,13.4514829 204.145318,14.4989344 C203.795534,15.4608409 204.093991,16.6185505 204.860094,17.3675449 L212.374751,24.6502797 L210.60682,35.050656 C210.418621,36.1304245 210.836841,37.1474601 211.728411,37.8242164 C212.602871,38.4591507 213.752977,38.5542008 214.682566,38.0086135 L223.989867,33.166764 L233.299069,38.0086135 C233.715388,38.2424366 234.164024,38.3698037 234.62977,38.3698037 C235.220981,38.3698037 235.796984,38.1530896 236.285541,37.8242164 C237.142893,37.1474601 237.57442,36.1304245 237.409033,35.050656 L235.627795,24.6502797 L243.153858,17.3675449 C243.919961,16.6185505 244.188002,15.4608409 243.866733,14.4989344 Z"
+                                        id="Stroke-1-Copy-4"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg></span></span><span><span class="MuiRating-icon MuiRating-iconEmpty"><svg width="42px"
+                              height="41px" viewBox="0 0 42 41" version="1.1">
+                              <title>Stroke 1 Copy 4</title>
+                              <g id="Advertiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Shoutout---Advertiser-Rate---Mobile"
+                                  transform="translate(-288.000000, -714.000000)" stroke="#C8CCD9" stroke-width="2">
+                                  <g id="Group-5" transform="translate(0.000000, 557.000000)">
+                                    <g id="Group" transform="translate(85.000000, 158.000000)">
+                                      <path
+                                        d="M243.866733,14.4989344 C243.539761,13.4514829 242.632984,12.6967855 241.579829,12.5294974 L231.194661,11.0239047 L226.539109,1.57592981 C226.056255,0.600716308 225.094349,0 223.989867,0 C222.917702,0 221.953895,0.600716308 221.486249,1.57592981 L216.826895,11.0239047 L206.424618,12.5294974 C205.354354,12.6967855 204.477993,13.4514829 204.145318,14.4989344 C203.795534,15.4608409 204.093991,16.6185505 204.860094,17.3675449 L212.374751,24.6502797 L210.60682,35.050656 C210.418621,36.1304245 210.836841,37.1474601 211.728411,37.8242164 C212.602871,38.4591507 213.752977,38.5542008 214.682566,38.0086135 L223.989867,33.166764 L233.299069,38.0086135 C233.715388,38.2424366 234.164024,38.3698037 234.62977,38.3698037 C235.220981,38.3698037 235.796984,38.1530896 236.285541,37.8242164 C237.142893,37.1474601 237.57442,36.1304245 237.409033,35.050656 L235.627795,24.6502797 L243.153858,17.3675449 C243.919961,16.6185505 244.188002,15.4608409 243.866733,14.4989344 Z"
+                                        id="Stroke-1-Copy-4"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg></span></span><span><span class="MuiRating-icon MuiRating-iconEmpty"><svg width="42px"
+                              height="41px" viewBox="0 0 42 41" version="1.1">
+                              <title>Stroke 1 Copy 4</title>
+                              <g id="Advertiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Shoutout---Advertiser-Rate---Mobile"
+                                  transform="translate(-288.000000, -714.000000)" stroke="#C8CCD9" stroke-width="2">
+                                  <g id="Group-5" transform="translate(0.000000, 557.000000)">
+                                    <g id="Group" transform="translate(85.000000, 158.000000)">
+                                      <path
+                                        d="M243.866733,14.4989344 C243.539761,13.4514829 242.632984,12.6967855 241.579829,12.5294974 L231.194661,11.0239047 L226.539109,1.57592981 C226.056255,0.600716308 225.094349,0 223.989867,0 C222.917702,0 221.953895,0.600716308 221.486249,1.57592981 L216.826895,11.0239047 L206.424618,12.5294974 C205.354354,12.6967855 204.477993,13.4514829 204.145318,14.4989344 C203.795534,15.4608409 204.093991,16.6185505 204.860094,17.3675449 L212.374751,24.6502797 L210.60682,35.050656 C210.418621,36.1304245 210.836841,37.1474601 211.728411,37.8242164 C212.602871,38.4591507 213.752977,38.5542008 214.682566,38.0086135 L223.989867,33.166764 L233.299069,38.0086135 C233.715388,38.2424366 234.164024,38.3698037 234.62977,38.3698037 C235.220981,38.3698037 235.796984,38.1530896 236.285541,37.8242164 C237.142893,37.1474601 237.57442,36.1304245 237.409033,35.050656 L235.627795,24.6502797 L243.153858,17.3675449 C243.919961,16.6185505 244.188002,15.4608409 243.866733,14.4989344 Z"
+                                        id="Stroke-1-Copy-4"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg></span></span>
+                      </span>
+                    </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+                  </div>
+
+                </div>
+                <div class="col-lg-3 col-md-0 col-0">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hover">
+            <div
+              style="position: relative;padding: 20px;border-radius: 10px;background-image: linear-gradient(117deg, rgb(148, 0, 239), rgb(91, 0, 219) 99%);z-index: 1;margin-top: 25px;overflow: hidden;">
+              <h2 style="color: rgb(255, 255, 255); font-size: 24px;">Get full access</h2>
+              <p style="color: rgb(255, 255, 255);">Complete your profile to be matched with the world’s largest
+                marketplace of influencers.</p><button class="MuiButtonBase-root MuiButton-root MuiButton-contained"
+                tabindex="0" type="button"
+                style="padding: 0px 10px; height: 30px; background-color: rgb(18, 223, 199); color: rgb(50, 54, 67); margin-top: 30px;"><span
+                  class="MuiButton-label">Complete profile<span class="MuiButton-endIcon MuiButton-iconSizeMedium"><svg
+                      width="24" height="24" viewBox="0 0 24 24"
+                      style="filter: invert(29%) sepia(22%) saturate(453%) hue-rotate(18deg) brightness(10%) contrast(60%);">
+                      <g stroke="#12DFC7" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m10.225 16.904 4.8-4.58-4.8-4.828"></path>
+                        <path
+                          d="M22 12c0 5.515-4.468 10-10.012 10C6.468 22 2 17.515 2 12S6.467 2 11.988 2C17.532 2 22 6.485 22 12z">
+                        </path>
+                      </g>
+                    </svg></span></span><span class="MuiTouchRipple-root"></span></button><svg width="479px"
+                height="514px" viewBox="0 0 479 514" version="1.1"
+                style="position: absolute; top: -30px; right: -60px; width: 225px; height: auto; z-index: -1;">
+                <title>Group 4 Copy 4</title>
+                <g id="MOBILE---Home-/-Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="favicon" transform="translate(-17.000000, 1.000000)" fill="#5B00DB">
+                    <g id="Group-2" transform="translate(17.000000, -1.000000)">
+                      <path
+                        d="M236.494878,0.00797809387 C183.706307,0.589049264 119.665025,30.5175387 44.3710314,89.7921168 L44.3710314,89.7921168 C16.5644919,109.176226 0,140.88383 0,174.722915 L0,174.722915 C0,208.56466 16.5658249,240.272264 44.3723644,259.655043 L44.3723644,259.655043 L180.043378,354.230027 C215.330398,378.82915 262.260681,378.82782 297.549034,354.228698 L297.549034,354.228698 L337.560006,326.334622 C348.816716,318.488167 363.785674,318.488167 375.041051,326.334622 L375.041051,326.334622 C382.273604,331.374118 384.041088,341.309504 378.986565,348.52436 L378.986565,348.52436 C377.914878,350.056155 376.579268,351.388496 375.042384,352.45889 L375.042384,352.45889 L316.992684,392.929101 C270.87283,425.08082 209.533425,425.082149 163.410906,392.930431 L163.410906,392.930431 L46.5397309,311.462125 C33.1436463,302.125096 14.6957048,305.386807 5.33444087,318.750114 L5.33444087,318.750114 C1.86212241,323.708499 0,329.610959 0,335.658354 L0,335.658354 C0,371.151564 17.3749217,404.409578 46.5397309,424.740421 L46.5397309,424.740421 L120.804692,476.508942 C192.515732,526.497019 287.88919,526.497019 359.600231,476.508942 L359.600231,476.508942 L434.730272,424.138075 C462.471498,404.799175 479,373.163374 479,339.40274 L479,339.40274 L479,310.748086 C479,294.943482 471.260929,280.13348 458.274058,271.082333 L458.274058,271.082333 L439.923421,258.289459 C438.341217,257.187153 436.76701,256.072879 435.200801,254.945308 L435.200801,254.945308 L361.014484,201.563882 C336.442999,183.880437 303.856523,180.476451 278.566582,201.123757 L278.566582,201.123757 C253.275307,221.771064 273.602699,258.159151 256.923574,269.273965 L256.923574,269.273965 C241.093534,279.826324 231.556322,276.866451 220.667504,269.276624 L220.667504,269.276624 L161.911344,228.31709 C132.240016,207.632552 124.995467,166.868482 145.73074,137.268424 L145.73074,137.268424 C150.134786,130.983016 155.611852,125.519351 161.912677,121.12741 L161.912677,121.12741 C208.089847,88.9384608 269.502564,88.9397905 315.678402,121.12874 L315.678402,121.12874 L432.45627,202.53588 C445.853688,211.874239 464.302962,208.612528 473.662893,195.247891 L473.662893,195.247891 C477.136545,190.290836 479,184.388376 479,178.338321 L479,178.338321 C479,142.842452 461.623745,109.584438 432.45627,89.2535955 L432.45627,89.2535955 C355.345475,29.7476527 290.536417,0 238.014434,0 L238.014434,0 C237.509249,0 236.997398,0 236.494878,0.00797809387 L236.494878,0.00797809387 Z"
+                        id="Clip-2"></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <h5 class="Dashboard">ACTIVE GIGS</h5>
+          <div class="active-box">
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path
+                d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
+              </path>
+            </svg>
+            <p>No active Gigs</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <h5 class="Dashboard">GIG REQUEST</h5>
+          <div class="active-box">
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path
+                d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
+              </path>
+            </svg>
+            <p>No active Gigs</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
