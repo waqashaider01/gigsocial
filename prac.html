@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <p class="input_signup">This will be the number you get notifications</p>
+              <input autocomplete="tel" placeholder="" class="py-2 input_signup_feild" value="" checked="" name="phone"
+    type="number" id="phone" data-intl-tel-input-id="0" style="border-radius: 30px; ">
+
+
+
+
+
+
+    
+
+
+    <input autocomplete="tel" placeholder="Phone Number" class="PhoneInputInput" value="" checked="" name="phone"
+        type="number" id="phone" data-intl-tel-input-id="0" style="padding-left: 75px;">
+    <script>
+
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            separateDialCode: true
+        });
+    </script>
+</body>
+</html>
