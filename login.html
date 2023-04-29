@@ -21,10 +21,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
    
+
+
+    <!-- Country code Links Start  -->
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css" />
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <!-- Country code Links End  -->
+
 </head>
 
 <body>
-
+<div class=" influence_main">
 <div class="header">
     <div class="container">
         <div class="row row2">
@@ -80,20 +87,25 @@
             <div class="col-lg-1 col-md-1 col-1">
             </div>
             <div class="col-lg-3 col-md-4 col-6 signup">
+<a href="login.html" class="text-decoration-none">
 
-                <span style="font-family: Avenir Heavy;
-                    font-weight: 900;
-                    line-height: 1.75;
-                    border-radius: 25px;
-                    letter-spacing: -0.08px;
-                    text-transform: uppercase; color:white; margin-right: 1rem;  font-family: Avenir Heavy;">LOGIN
-                </span>
-                <span STYLE=" font-family: Avenir Heavy;
-                    font-weight: 900;
-                    line-height: 1.75;
-                    border-radius: 25px;
-                    letter-spacing: -0.08px;
-                    text-transform: uppercase; font-family: Avenir Heavy;">SIGN UP</span>
+    <span style="font-family: Avenir Heavy;
+                        font-weight: 900;
+                        line-height: 1.75;
+                        border-radius: 25px;
+                        letter-spacing: -0.08px;
+                        text-transform: uppercase; color:white; margin-right: 1rem;  font-family: Avenir Heavy;">LOGIN
+    </span>
+</a>
+            <a href="signup.html" class="text-decoration-none">
+
+                    <span STYLE=" font-family: Avenir Heavy;
+                                        font-weight: 900;
+                                        line-height: 1.75;
+                                        border-radius: 25px;
+                                        letter-spacing: -0.08px;
+                                        text-transform: uppercase; font-family: Avenir Heavy;">SIGN UP</span>
+            </a>
             </div>
         </div>
     </div>
@@ -101,6 +113,12 @@
 </div>
 
 
+
+<div class="text-center">
+    <h5 class="my-5 login_text">LOGIN</h4>
+
+        <h1 class="signup_main">Good to see you again!</h1>
+</div>
 
     <div class="container">
         <div class="row justify-content-center">
@@ -123,18 +141,36 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="c_width my-2">
+
+           
+            <div class="c_width mt-2">
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
                         tabindex="0">
 
-                        <div class="inputWithIcon">
-                            <input type="text" placeholder="Email">
-                            <i class="fa-regular fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+
+                        <div class="mt-3">
+                         
+                        
+                            <input autocomplete="tel" placeholder=" Phone Number" class="py-2 inpout flag_uinput" value="" checked="" name="phone"
+                                type="number" id="phone" data-intl-tel-input-id="0">
+                        
+                        
+                        </div>
+
+                   
+                      
+                        <div class="inputWithIcon mt-3">
+                            <input type="password" placeholder=" Password">
+                            <i class="fa-solid fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="my-2">
+                            <input name="checked" type="checkbox">
+                            <span class="">Remember me</span>
                         </div>
                         <div class="inputWithIcon">
-                            <input type="password" placeholder="Password">
-                            <i class="fa-solid fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+                            <button type="button" class="      mt-3    me-3  getstartbtn signupbtns w-100  "> Login</button>
                         </div>
                     </div>
 
@@ -151,8 +187,14 @@
                     </div>
 
 
-                    
- 
+                   <div class="my-2">
+                    <input name="checked" type="checkbox">
+                    <span class="">Remember me</span>
+                   </div>
+                      <button type="button" class="      mt-3    me-3  getstartbtn signupbtns w-100  ">Login</button>
+    
+
+
 
                 
                     </div>
@@ -164,6 +206,7 @@
     </div>
 
 
+<!--################> Footer Start <############## -->
 
 <footer class="hidden">
 
@@ -249,6 +292,15 @@
 
 </footer>
 
+<!--################> Footer End  <############## -->
+</div>
+<script>
+
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+        separateDialCode: true
+    });
+</script>
 
 
     <!------ JS libraries ------>

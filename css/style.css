@@ -12,6 +12,7 @@
 
     --btn1color:#5b00db;
 
+    --text:#5b00db;
 
     --influence-bg:#fafafa;
 
@@ -631,7 +632,16 @@
     transition: .5s ease-in-out;
         }
 
- 
+ .login_text{
+
+        font-size: 14px;
+    font-family: Avenir Black;
+    letter-spacing: 3.5px;
+    margin-bottom: 15px;
+    opacity: .8;
+    text-transform: uppercase;
+    color:var(--text) !important;
+ }
  
  
 
@@ -859,7 +869,7 @@ padding-bottom: 12px;
   left: 0;
   top: 20px;
   padding: 9px 10px;
-  color: #aaa;
+  color: var(--text);
   transition: 0.3s;
 }
 
