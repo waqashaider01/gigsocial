@@ -16,6 +16,8 @@
 
     --influence-bg:#fafafa;
 
+    --card:#f2f4f9;
+--cardtop:#323643;
 
 }
 
@@ -140,7 +142,7 @@
 }
 
 .signupbtn {
-    background-color: #12dfc7;
+    background-color: var(--colorone);
     color: #323643;
     opacity: 1;
     text-decoration: none;
@@ -563,6 +565,7 @@
     /* padding: 0 20px; */
     box-sizing: border-box;
     transition: 0.3s;
+    background-color: transparent;
 }
 
  
@@ -610,12 +613,15 @@
     /* padding: 0 20px; */
     box-sizing: border-box;
     transition: 0.3s;
+    background-color: transparent;
+
 }
 
  
 
 .inputWithIcon input[type="password"] {
     padding-left: 40px;
+
 }
 
 
@@ -878,4 +884,49 @@ padding-bottom: 12px;
     background-color: var(--influence-bg);
 }
  
+
+/* Company Form Start  */
+.card_comp_main{
+ position: relative;
+    background-color: var(--card);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border: none;
+}
+.card-comp{
+    width: 100%;
+    height: 70px;
+  
+    text-align: center;
+    background-color:var(--cardtop);
+    color: var(--card);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
  
+.card_com_content{
+        padding: 25px 20px;
+    font-family: Avenir Heavy;
+    /* font-size: 14px; */
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.card-com-btn{
+ background-color: var(--text);
+    color: var(--light);
+    opacity: 1;
+    text-decoration: none;
+    padding: 5px;
+    
+    border-radius: 30px;
+    font-weight: 700;
+    position: absolute;
+    bottom: -10px;
+ left: 80px;
+}
+
+.comp_how{
+    color: var(--text);
+    letter-spacing: 5px;
+}
