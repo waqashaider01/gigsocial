@@ -825,7 +825,7 @@ footer {
 /* #################>Signup Css Start  <################*/
 .signup_main{
       font-size: 32px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
         color: var(--Mainheading);
     font-family: Avenir Heavy;
 }
