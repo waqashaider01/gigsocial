@@ -166,10 +166,12 @@
     }
     
     function removentertainment(){
-      
+    
       
       entertainment.style.display="none";
       tain.style.display="block";
+      count--;
+      check();
       
     
     }
@@ -185,9 +187,12 @@
     
     }
     function removeucf(){
-    
+     
       ufc.style.display="none";
       ufc2.style.display="block";
+      count--;
+      check()
+
     
     }
     
@@ -208,9 +213,11 @@
     }
     
     function removefans(){
+     
       hide.style.display=" none";
       onlyfans.style.display="block"
-    
+      count--;
+      check();
       ;
      
     
@@ -231,9 +238,11 @@
     
     }
     function removeinsta(){
+     
       hiden1.style.display="none";
       hide3.style.display="block";
-    
+      count--
+      check();
     }
     
     let hiden5= document.querySelector("#tato5");
@@ -250,8 +259,11 @@
     
     }
     function removemodeling(){
+    
       hiden5.style.display=" none";
       hide4.style.display="block";
+      count--;
+      check();
     }
     
     
@@ -268,9 +280,11 @@
     
     }
     function removetravels(){
+   
       hiden2.style.display=" none";
       hide5.style.display="block";
-    
+      count--;
+      check();
      
     }
     
@@ -289,9 +303,11 @@
     
     }
     function removefitnes(){
+     
       hiden4.style.display=" none";
       hide0.style.display="block";
-    
+      count--;
+      check();
     }
     
     
@@ -310,9 +326,11 @@
     
     }
     function removerelation(){
+      
       hiden3.style.display=" none";
       hide6.style.display="block";
-    
+      count--;
+      check();
     }
     
     let hiden7= document.querySelector("#tato7");
@@ -327,9 +345,11 @@
     
     }
     function removetwitch(){
+    
       hiden7.style.display=" none";
       hide8.style.display="block";
-    
+      count--;
+      check();
     }
     
     
@@ -394,7 +414,13 @@
         
         
       }
+      else{
+        $(".popular-btns").find("*").prop('disabled', false);
+
+      }
+      
     }
+    
     
     
     
