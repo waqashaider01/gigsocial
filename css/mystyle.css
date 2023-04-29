@@ -876,92 +876,6 @@ label #cancel {
 
 
 
-input[type="text"] {
-    width: 100%;
-    border: 1px solid #aaa;
-    border-radius: 200px;
-    height: 40px;
-    margin: 8px 0;
-    outline: none;
-    padding: 8px;
-    /* padding: 0 20px; */
-    box-sizing: border-box;
-    transition: 0.3s;
-}
-
-input[type="text"]:focus {
-    border-color: #38B6FF;
-    box-shadow: 0 0 5px 0 #38B6FF;
-}
-
-.inputWithIcon input[type="text"] {
-    padding-left: 40px;
-}
-
-.inputWithIcon {
-    position: relative;
-}
-
-.inputWithIcon i {
-    position: absolute;
-    left: 0;
-    top: 19px;
-    padding: 9px 9px 8px 15px;
-    color: #38B6FF;
-    transition: 0.3s;
-}
-
-.inputWithIcon input[type="text"]:focus+i {
-    color: #38B6FF;
-}
-
-.inputWithIcon.inputIconBg i {
-    background-color: #aaa;
-    color: #fff;
-    padding: 9px 4px;
-    border-radius: 4px 0 0 4px;
-}
-
-.inputWithIcon.inputIconBg input[type="text"]:focus+i {
-    color: #fff;
-    background-color: #38B6FF;
-}
-
-
-
-
-
-input[type="password"] {
-    width: 100%;
-    border: 1px solid #aaa;
-    border-radius: 200px;
-    height: 40px;
-    margin: 8px 0;
-    outline: none;
-    padding: 8px;
-    /* padding: 0 20px; */
-    box-sizing: border-box;
-    transition: 0.3s;
-}
-
-input[type="password"]:focus {
-    border-color: #38B6FF;
-    box-shadow: 0 0 5px 0 #38B6FF;
-}
-
-.inputWithIcon input[type="password"] {
-    padding-left: 40px;
-}
-
-.inputWithIcon input[type="password"]:focus+i {
-    color: #38B6FF;
-}
-
-.inputWithIcon.inputIconBg input[type="text"]:focus+i {
-    color: #fff;
-    background-color: #38B6FF;
-}
-
 
 /*      ...................audience apge...................... */
 
@@ -972,3 +886,178 @@ input[type="password"]:focus {
 
 }
 
+
+
+/* ...............Profile.................. */
+
+.ProfileInfo_container__KNHJm .ProfileInfo_avatarField__yagxy .ProfileInfo_avatar__3zlUt {
+    position: relative;
+    display: -moz-box;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    z-index: 2;
+    border-radius: 50%;
+}
+.ProfileInfo_container__KNHJm .ProfileInfo_avatarField__yagxy .ProfileInfo_avatar__3zlUt .ProfileInfo_addIconContainer__2gahU {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.ProfileInfo_container__KNHJm .ProfileInfo_avatarField__yagxy .ProfileInfo_avatar__3zlUt svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.jss6 {
+    width: 80px;
+    height: 80px;
+}
+.MuiAvatar-colorDefault {
+    color: #fafafa;
+    background-color: #bdbdbd;
+}
+.ProfileInfo_avatar__3zlUt {
+    position: relative;
+    display: -moz-box;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    z-index: 2;
+    border-radius: 50%;
+}
+.MuiAvatar-root {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.25rem;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: Avenir Roman;
+    line-height: 1;
+    user-select: none;
+    border-radius: 50%;
+    justify-content: center;
+}
+.ProfileInfo_container__KNHJm .ProfileInfo_avatarField__yagxy .ProfileInfo_avatar__3zlUt .ProfileInfo_addIconContainer__2gahU {
+    background-color: rgba(0,0,0,.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.ProfileInfo_container__KNHJm .ProfileInfo_avatarField__yagxy .ProfileInfo_avatar__3zlUt svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.ProfileInfo_avatar__3zlUt svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.ProfileInfo_addIconContainer__2gahU{
+    background-color: rgba(0,0,0,.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.ProfileInfo_container__KNHJm .ProfileInfo_avatarField__yagxy .ProfileInfo_avatar__3zlUt .ProfileInfo_addIconContainer__2gahU {
+    background-color: rgba(0,0,0,.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.MuiOutlinedInput-root {
+    color: #323643;
+    height: 40px;
+    position: relative;
+    border-color: #c8ccd9;
+    border-radius: 20px;
+    letter-spacing: -0.09px;
+}
+.MuiInputBase-root {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: Avenir Roman;
+    font-weight: 400;
+    line-height: 1.1876em;
+}
+.MuiInputAdornment-root {
+    height: 0.01em;
+    display: flex;
+    max-height: 2em;
+    align-items: center;
+    white-space: nowrap;
+}
+.MuiOutlinedInput-inputAdornedStart {
+    padding-left: 0;
+}
+.MuiOutlinedInput-input {
+    height: 40px;
+    padding: 0 20px;
+}
+.MuiInputBase-input {
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.MuiOutlinedInput-root {
+    color: #323643;
+    height: 40px;
+    position: relative;
+    border-color: #c8ccd9;
+    border-radius: 20px;
+    letter-spacing: -0.09px;
+}
+.MuiInputAdornment-positionStart {
+    margin-right: 8px;
+}
+.MuiFormControl-root {
+    width: 100%;
+    border: 0;
+    height: 40px;
+    margin: 0;
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+    margin-bottom: 20px;
+    flex-direction: column;
+    vertical-align: top;
+}
