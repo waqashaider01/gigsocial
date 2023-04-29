@@ -840,18 +840,31 @@ footer {
 .signupbtns{
     border: none;
 width: 100%;
+padding: 10px;
 }
 
 
-@media(min-width:600px)
+
+@media(min-width:800px)
 {
     .signupbtns{
     border: none;
-width: 35%;
+width: 40%;
+
 padding-top: 12px;
 padding-bottom: 12px;
 }
 }
+/* @media(min-width:600px)
+{
+    .signupbtns{
+    border: none;
+width: 35%;
+
+padding-top: 12px;
+padding-bottom: 12px;
+}
+} */
 
 .signup_hint{
     font-size: 15px;
