@@ -623,6 +623,14 @@
 
 }
 
+.custom_nav  .active{
+            background: #38B6FF;
+    border-radius: 200px;
+    color: white;
+    transform: translateX(4px);
+    transition: .5s ease-in-out;
+        }
+
  
  
  
