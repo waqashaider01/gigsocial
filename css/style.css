@@ -521,6 +521,10 @@
 .c_nav a:nth-child(2) {
     width: 110px;
 }
+.athlet_nav a:nth-child(2) {
+    width: 150px;
+}
+
 
 .c_nav a:nth-child(2):focus~.animation {
     width: 110px;
@@ -645,6 +649,16 @@
     letter-spacing: 3.5px;
     margin-bottom: 15px;
     opacity: .8;
+    text-transform: uppercase;
+    color:var(--text) !important;
+ }
+
+ .at_text{
+      font-size: 16px;
+    font-family: Avenir Black;
+    letter-spacing: 3.5px;
+    
+  font-weight: 800 !important; 
     text-transform: uppercase;
     color:var(--text) !important;
  }
@@ -929,4 +943,27 @@ padding-bottom: 12px;
 .comp_how{
     color: var(--text);
     letter-spacing: 5px;
+}
+
+
+
+/* Athlets Start  */
+.athlet_school{
+    color: var(--cardtop);
+    font-weight: 700;
+}
+.athele_com_select{
+    border-bottom: 2px solid var(--card);
+   background-color: transparent;
+   border: none;
+    border-radius: 0px !important;
+   border-bottom: 1px solid var(--cardtop) !important;
+}
+.athele_com_select:focus{
+    border: none;
+    box-shadow: none ;
+    outline: none;
+     
+    border-bottom:2px solid var(--btn1color) !important;
+   
 }
