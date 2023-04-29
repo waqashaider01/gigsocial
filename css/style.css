@@ -10,6 +10,14 @@
     --navbar: #5b00db;
     --colorone: #38B6FF;
 
+    --btn1color:#5b00db;
+
+    --text:#5b00db;
+
+    --influence-bg:#fafafa;
+
+    --card:#f2f4f9;
+--cardtop:#323643;
 
 }
 
@@ -134,7 +142,7 @@
 }
 
 .signupbtn {
-    background-color: #12dfc7;
+    background-color: var(--colorone);
     color: #323643;
     opacity: 1;
     text-decoration: none;
@@ -211,7 +219,7 @@
 
 .getstartbtn {
     border-radius: 30px;
-    background-color: #5b00db;
+    background-color: var(--btn1color);
     color: white;
     font-weight: 700;
     text-decoration: none;
@@ -513,6 +521,10 @@
 .c_nav a:nth-child(2) {
     width: 110px;
 }
+.athlet_nav a:nth-child(2) {
+    width: 150px;
+}
+
 
 .c_nav a:nth-child(2):focus~.animation {
     width: 110px;
@@ -546,24 +558,21 @@
 
 
 
-input[type="text"] {
+.inputWithIcon input[type="text"] {
     width: 100%;
     border: 1px solid #aaa;
     border-radius: 200px;
-    height: 40px;
+    height: 45px;
     margin: 8px 0;
     outline: none;
     padding: 8px;
     /* padding: 0 20px; */
     box-sizing: border-box;
     transition: 0.3s;
+    background-color: transparent;
 }
 
-input[type="text"]:focus {
-    border-color: #38B6FF;
-    box-shadow: 0 0 5px 0 #38B6FF;
-}
-
+ 
 .inputWithIcon input[type="text"] {
     padding-left: 40px;
 }
@@ -574,17 +583,16 @@ input[type="text"]:focus {
 
 .inputWithIcon i {
     position: absolute;
-    left: 0;
-    top: 19px;
+    left: 10;
+    top: 22px !important;
+    
+    font-size: 18px;
     padding: 9px 9px 8px 15px;
     color: #38B6FF;
     transition: 0.3s;
 }
 
-.inputWithIcon input[type="text"]:focus+i {
-    color: #38B6FF;
-}
-
+ 
 .inputWithIcon.inputIconBg i {
     background-color: #aaa;
     color: #fff;
@@ -592,16 +600,13 @@ input[type="text"]:focus {
     border-radius: 4px 0 0 4px;
 }
 
-.inputWithIcon.inputIconBg input[type="text"]:focus+i {
-    color: #fff;
-    background-color: #38B6FF;
-}
+ 
 
 
 
 
 
-input[type="password"] {
+.inputWithIcon input[type="password"] {
     width: 100%;
     border: 1px solid #aaa;
     border-radius: 200px;
@@ -612,26 +617,53 @@ input[type="password"] {
     /* padding: 0 20px; */
     box-sizing: border-box;
     transition: 0.3s;
+    background-color: transparent;
+
 }
 
-input[type="password"]:focus {
-    border-color: #38B6FF;
-    box-shadow: 0 0 5px 0 #38B6FF;
-}
+ 
 
 .inputWithIcon input[type="password"] {
     padding-left: 40px;
+
 }
 
-.inputWithIcon input[type="password"]:focus+i {
-    color: #38B6FF;
+
+.inputWithIcon input::placeholder{
+    font-size: 14px;
+
 }
 
-.inputWithIcon.inputIconBg input[type="text"]:focus+i {
-    color: #fff;
-    background-color: #38B6FF;
-}
+.custom_nav  .active{
+            background: #38B6FF;
+    border-radius: 200px;
+    color: white;
+    transform: translateX(4px);
+    transition: .5s ease-in-out;
+        }
 
+ .login_text{
+
+        font-size: 14px;
+    font-family: Avenir Black;
+    letter-spacing: 3.5px;
+    margin-bottom: 15px;
+    opacity: .8;
+    text-transform: uppercase;
+    color:var(--text) !important;
+ }
+
+ .at_text{
+      font-size: 16px;
+    font-family: Avenir Black;
+    letter-spacing: 3.5px;
+    
+  font-weight: 800 !important; 
+    text-transform: uppercase;
+    color:var(--text) !important;
+ }
+ 
+ 
 
 
 
@@ -786,4 +818,165 @@ footer {
     .none {
         visibility: hidden;
     }
+}
+
+
+
+/* #################>Signup Css Start  <################*/
+.signup_main{
+      font-size: 32px;
+    /* margin-bottom: 30px; */
+        color: var(--Mainheading);
+    font-family: Avenir Heavy;
+}
+
+@media screen and (min-width: 1280px){
+.signup_main{
+    font-size: 50px;
+}
+}
+
+/* #################>Signup Css Start  <################*/
+.signupbtns{
+    border: none;
+width: 100%;
+padding: 10px;
+}
+
+
+
+@media(min-width:800px)
+{
+    .signupbtns{
+    border: none;
+width: 40%;
+
+padding-top: 12px;
+padding-bottom: 12px;
+}
+}
+/* @media(min-width:600px)
+{
+    .signupbtns{
+    border: none;
+width: 35%;
+
+padding-top: 12px;
+padding-bottom: 12px;
+}
+} */
+
+.signup_hint{
+    font-size: 15px;
+}
+
+
+/*#####################> Influences form Start<########### */
+.input_signup{
+      
+    opacity: 0.6;
+    font-size: 12px;
+}
+.iti--separate-dial-code .iti__selected-flag {
+    background-color: white !important;
+   
+    margin-left: 10px !important;
+    margin-top: 7px !important;
+    height: 30px !important;
+}
+
+.inpout{
+        border:1px solid  #c8ccd9 !important;
+        border-radius: 30px;
+      
+}
+.flag_uinput{
+    padding-left: 120px !important;
+}
+/* In  */ 
+.inputWithIcon{
+    position: relative;
+}
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  padding: 9px 10px;
+  color: var(--text);
+  transition: 0.3s;
+}
+
+
+.influence_main{
+    background-color: var(--influence-bg);
+}
+ 
+
+/* Company Form Start  */
+.card_comp_main{
+ position: relative;
+    background-color: var(--card);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border: none;
+}
+.card-comp{
+    width: 100%;
+    height: 70px;
+  
+    text-align: center;
+    background-color:var(--cardtop);
+    color: var(--card);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+ 
+.card_com_content{
+        padding: 25px 20px;
+    font-family: Avenir Heavy;
+    /* font-size: 14px; */
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.card-com-btn{
+ background-color: var(--text);
+    color: var(--light);
+    opacity: 1;
+    text-decoration: none;
+    padding: 5px;
+    
+    border-radius: 30px;
+    font-weight: 700;
+    position: absolute;
+    bottom: -10px;
+ left: 80px;
+}
+
+.comp_how{
+    color: var(--text);
+    letter-spacing: 5px;
+}
+
+
+
+/* Athlets Start  */
+.athlet_school{
+    color: var(--cardtop);
+    font-weight: 700;
+}
+.athele_com_select{
+    border-bottom: 2px solid var(--card);
+   background-color: transparent;
+   border: none;
+    border-radius: 0px !important;
+   border-bottom: 1px solid var(--cardtop) !important;
+}
+.athele_com_select:focus{
+    border: none;
+    box-shadow: none ;
+    outline: none;
+     
+    border-bottom:2px solid var(--btn1color) !important;
+   
 }
