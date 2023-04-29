@@ -21,7 +21,7 @@
 
     <input type="text" class="form-control form-cntl" placeholder="Tap to select" aria-label="Username" aria-describedby="addon-wrapping">
     <div class="right" style="display: flex; justify-content: space-between; align-items: center;">
-      <h4 style="color:#323643 !important">Selected</h4><h4>3  left</h4>
+      <h4 style="color:#323643 !important">Selected</h4><h4 id="demo">5  left</h4>
     </div>
     <div class="right" style=" max-width: 100%; flex-flow:row wrap;  display: flex; justify-content: left; align-items: center;">
      
@@ -60,7 +60,7 @@
                             
                              
 <button class="btn-dark btn  " id="tato5"  onclick="removemodeling()" style="display:flex; border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">Modeling<svg  width="14px" height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary"><title>Combined Shape</title><g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF" stroke-width="2"><path d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118" id="Combined-Shape"></path></g></g></svg></button>
-<button class="btn-dark btn  " id="tato7" onclick="removetwitch()"style=" display:flex; border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">Twitch<svg  width="14px" height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary"><title>Combined Shape</title><g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g  id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF" stroke-width="2"><path d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118" id="Combined-Shape"></path></g></g></svg></button>
+<button class="btn-dark btn  " id="tato7" onclick="removetwitch()" style=" display:flex; border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">Twitch<svg  width="14px" height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary"><title>Combined Shape</title><g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g  id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF" stroke-width="2"><path d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118" id="Combined-Shape"></path></g></g></svg></button>
 
 <button class="btn-dark btn  " id="tato1" onclick="removeinsta()" style=" display:flex; border-radius: 20px; justify-content: center; padding:0.3rem 1.5rem 0.3rem 1.5rem;">instagram<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary"><title>Combined Shape</title><g  id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF" stroke-width="2"><path d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118" id="Combined-Shape"></path></g></g></svg></button>
 
@@ -77,10 +77,10 @@
        font-weight: 600;
 ">Popular</h4>
 
-<div class="scroolbar" style="overflow: scroll !important; ">
-  <div class="popular-btns" style="display: flex; justify-content: left; flex-flow: row wrap; ">
+<div class="scroolbar" id="disableclick" style="overflow: scroll !important; ">
+  <div class="popular-btns"  style="display: flex; justify-content: left; flex-flow: row wrap; ">
    
-     <button   onclick="showcontent()" id="onlyfans" class=" btn" style=" border-radius: 20px; color: #323643;
+     <button id="onlyfans"  onclick="showcontent()"  class=" btn" style=" border-radius: 20px; color: #323643;
      border: 2px solid #323643;
      opacity: 0.6;">onlyfans</button>
     <button  class=" btn" style="  border-radius: 20px; color: #323643;
@@ -118,7 +118,6 @@
 
 
 </div>
- 
 
 
 
@@ -152,185 +151,255 @@
   </div>
 
   <script>
-
-
-    let entertainment= document.querySelector("#entertaiment1");
-    entertainment.style.display="none"
-    let tain= document.querySelector("#tain");
-function showentertainment(){
-
-  entertainment.style.display="block"
-  tain.style.display="none";
-  
-}
-
-function removentertainment(){
-  
-  entertainment.style.display="none";
-  tain.style.display="block";
-  
-
-}
-let ufc= document.querySelector("#ufc");
-ufc.style.display="none";
-let ufc2=document.querySelector("#ufc2");
-function showucf(){
-  ufc.style.display="block";
-  ufc2.style.display="none";
-
-}
-function removeucf(){
-  ufc.style.display="none";
-  ufc2.style.display="block";
-
-}
-
-
-let hide= document.querySelector("#tato");
-hide.style.display="none";
-
-let onlyfans =document.querySelector("#onlyfans");
- function showcontent(){
-  hide.style.display=" block";
-  onlyfans.style.display="none"
-
-}
-
-function removefans(){
-  hide.style.display=" none";
-  onlyfans.style.display="block"
-
-  ;
-
-}
-
-
-
-let hiden1= document.querySelector("#tato1");
-hiden1.style.display="none";
-
-let hide3 =document.querySelector("#insta");
-function showcontent1(){
-  hiden1.style.display="block";
-  hide3.style.display="none";
-
-}
-function removeinsta(){
-  hiden1.style.display="none";
-  hide3.style.display="block";
-
-}
-
-let hiden5= document.querySelector("#tato5");
-hiden5.style.display="none";
-
-let hide4 =document.querySelector("#model");
-
-function showcontent2(){
-  hiden5.style.display=" block";
-  hide4.style.display="none";
-
-}
-function removemodeling(){
-  hiden5.style.display=" none";
-  hide4.style.display="block";
-}
-
-
-let hiden2= document.querySelector("#tavel");
-hiden2.style.display="none";
-let hide5 =document.querySelector("#travels");
-function showcontent4(){
-  hiden2.style.display="block";
-  hide5.style.display="none";
-
-}
-function removetravels(){
-  hiden2.style.display=" none";
-  hide5.style.display="block";
- 
-}
-
-
-let hiden4= document.querySelector("#tato4");
-hiden4.style.display="none";
-
-let hide0 =document.querySelector("#fit");
-
-function showfit(){
-  hiden4.style.display="block";
-  hide0.style.display="none";
-
-}
-function removefitnes(){
-  hiden4.style.display=" none";
-  hide0.style.display="block";
-
-}
-
-
-
-let hiden3= document.querySelector("#tato3");
-hiden3.style.display="none";
-
-let hide6 =document.querySelector("#relationship");
-
-function showcontent3(){
-  hiden3.style.display="block";
-  hide6.style.display="none";
-
-}
-function removerelation(){
-  hiden3.style.display=" none";
-  hide6.style.display="block";
-
-}
-
-let hiden7= document.querySelector("#tato7");
-hiden7.style.display="none";
-let hide8 =document.querySelector("#twitch");
-function showcontent6(){
-  hiden7.style.display="block";
-  hide8.style.display="none";
-
-}
-function removetwitch(){
-  hiden7.style.display=" none";
-  hide8.style.display="block";
-
-}
-
-
-
-
-
-
-
-
-
-
-
-let hide7 =document.querySelector("#tain");
-
-let ucf9 =document.querySelector("#ufc");
-
-
-
-function showcontent5(){
-  hiden5.style.display="block";
-  hide7.style.display="none";
-
-}
-
-function showcontent7(){
-  hiden7.style.display="block";
-  hide7.style.display="none";
-
-}
-
-
-    </script>
-  
+    let count=0;
+    
+        let entertainment= document.querySelector("#entertaiment1");
+        entertainment.style.display="none"
+        let tain= document.querySelector("#tain");
+    function showentertainment(){
+      entertainment.style.display="block"
+      tain.style.display="none";
+      count++;
+      check();
+     
+      
+    }
+    
+    function removentertainment(){
+      
+      
+      entertainment.style.display="none";
+      tain.style.display="block";
+      
+    
+    }
+    let ufc= document.querySelector("#ufc");
+    ufc.style.display="none";
+    let ufc2=document.querySelector("#ufc2");
+    function showucf(){
+      ufc.style.display="block";
+      ufc2.style.display="none";
+      count++;
+      check()
+     
+    
+    }
+    function removeucf(){
+    
+      ufc.style.display="none";
+      ufc2.style.display="block";
+    
+    }
+    
+    
+    let hide= document.querySelector("#tato");
+    hide.style.display="none";
+    
+    let onlyfans =document.querySelector("#onlyfans");
+     function showcontent(){
+      hide.style.display=" block";
+      onlyfans.style.display="none"
+      
+      
+      count++;
+      check();
+     
+    
+    }
+    
+    function removefans(){
+      hide.style.display=" none";
+      onlyfans.style.display="block"
+    
+      ;
+     
+    
+    }
+    
+    
+    
+    let hiden1= document.querySelector("#tato1");
+    hiden1.style.display="none";
+    
+    let hide3 =document.querySelector("#insta");
+    function showcontent1(){
+      hiden1.style.display="block";
+      hide3.style.display="none";
+      count++;
+      check();
+     
+    
+    }
+    function removeinsta(){
+      hiden1.style.display="none";
+      hide3.style.display="block";
+    
+    }
+    
+    let hiden5= document.querySelector("#tato5");
+    hiden5.style.display="none";
+    
+    let hide4 =document.querySelector("#model");
+    
+    function showcontent2(){
+      hiden5.style.display=" block";
+      hide4.style.display="none";
+      count++;
+      check();
+     
+    
+    }
+    function removemodeling(){
+      hiden5.style.display=" none";
+      hide4.style.display="block";
+    }
+    
+    
+    let hiden2= document.querySelector("#tavel");
+    hiden2.style.display="none";
+    let hide5 =document.querySelector("#travels");
+    function showcontent4(){
+      hiden2.style.display="block";
+      hide5.style.display="none";
+      count++;
+      check();
+     
+    
+    
+    }
+    function removetravels(){
+      hiden2.style.display=" none";
+      hide5.style.display="block";
+    
+     
+    }
+    
+    
+    let hiden4= document.querySelector("#tato4");
+    hiden4.style.display="none";
+    
+    let hide0 =document.querySelector("#fit");
+    
+    function showfit(){
+      hiden4.style.display="block";
+      hide0.style.display="none";
+      count++;
+      check();
+     
+    
+    }
+    function removefitnes(){
+      hiden4.style.display=" none";
+      hide0.style.display="block";
+    
+    }
+    
+    
+    
+    let hiden3= document.querySelector("#tato3");
+    hiden3.style.display="none";
+    
+    let hide6 =document.querySelector("#relationship");
+    
+    function showcontent3(){
+      hiden3.style.display="block";
+      hide6.style.display="none";
+      count++;
+      check();
+     
+    
+    }
+    function removerelation(){
+      hiden3.style.display=" none";
+      hide6.style.display="block";
+    
+    }
+    
+    let hiden7= document.querySelector("#tato7");
+    hiden7.style.display="none";
+    let hide8 =document.querySelector("#twitch");
+    function showcontent6(){
+      hiden7.style.display="block";
+      hide8.style.display="none";
+      count++;
+      check();
+     
+    
+    }
+    function removetwitch(){
+      hiden7.style.display=" none";
+      hide8.style.display="block";
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    let hide7 =document.querySelector("#tain");
+    
+    let ucf9 =document.querySelector("#ufc");
+    
+    
+    
+    function showcontent5(){
+      hiden5.style.display="block";
+      hide7.style.display="none";
+    
+    }
+    
+    function showcontent7(){
+      hiden7.style.display="block";
+      hide7.style.display="none";
+    
+    }
+    function check(){
+      if(count==1)
+      {
+        
+        document.getElementById("demo").innerHTML = "4 left";;
+      }
+      if(count==2)
+      {
+        
+        document.getElementById("demo").innerHTML = "3 left";;
+      }
+      if(count==3)
+      {
+        
+        document.getElementById("demo").innerHTML = "2 left";;
+      }
+      if(count==4)
+      {
+        
+        document.getElementById("demo").innerHTML = "1 left";;
+      }
+      if(count==5)
+      {
+        
+        document.getElementById("demo").innerHTML = "0 left";;
+      }
+      if(count>4)
+      {
+       
+        document.getElementById("demo").innerHTML = "<span style='color: red;'>Only 5 can be selected</span>";;
+        $(".popular-btns").find("*").prop('disabled', true);
+      
+       
+        
+        
+      }
+    }
+    
+    
+    
+    
+        </script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
    crossorigin="anonymous"></script>

@@ -83,10 +83,10 @@
        font-weight: 600;
 ">Popular</h4>
 
-<div class="scroolbar" style="overflow: scroll !important; ">
-  <div class="popular-btns" style="display: flex; justify-content: left; flex-flow: row wrap; ">
+<div class="scroolbar" id="disableclick" style="overflow: scroll !important; ">
+  <div class="popular-btns"  style="display: flex; justify-content: left; flex-flow: row wrap; ">
    
-     <button   onclick="showcontent()" id="onlyfans" class=" btn" style=" border-radius: 20px; color: #323643;
+     <button id="onlyfans"  onclick="showcontent()"  class=" btn" style=" border-radius: 20px; color: #323643;
      border: 2px solid #323643;
      opacity: 0.6;">onlyfans</button>
     <button  class=" btn" style="  border-radius: 20px; color: #323643;
@@ -164,10 +164,12 @@ function showentertainment(){
   tain.style.display="none";
   count++;
   check();
+ 
   
 }
 
 function removentertainment(){
+  
   
   entertainment.style.display="none";
   tain.style.display="block";
@@ -182,9 +184,11 @@ function showucf(){
   ufc2.style.display="none";
   count++;
   check()
+ 
 
 }
 function removeucf(){
+
   ufc.style.display="none";
   ufc2.style.display="block";
 
@@ -198,8 +202,11 @@ let onlyfans =document.querySelector("#onlyfans");
  function showcontent(){
   hide.style.display=" block";
   onlyfans.style.display="none"
+  
+  
   count++;
   check();
+ 
 
 }
 
@@ -223,6 +230,7 @@ function showcontent1(){
   hide3.style.display="none";
   count++;
   check();
+ 
 
 }
 function removeinsta(){
@@ -241,6 +249,7 @@ function showcontent2(){
   hide4.style.display="none";
   count++;
   check();
+ 
 
 }
 function removemodeling(){
@@ -257,6 +266,8 @@ function showcontent4(){
   hide5.style.display="none";
   count++;
   check();
+ 
+
 
 }
 function removetravels(){
@@ -277,6 +288,7 @@ function showfit(){
   hide0.style.display="none";
   count++;
   check();
+ 
 
 }
 function removefitnes(){
@@ -297,6 +309,7 @@ function showcontent3(){
   hide6.style.display="none";
   count++;
   check();
+ 
 
 }
 function removerelation(){
@@ -313,6 +326,7 @@ function showcontent6(){
   hide8.style.display="none";
   count++;
   check();
+ 
 
 }
 function removetwitch(){
@@ -348,18 +362,44 @@ function showcontent7(){
 
 }
 function check(){
+  if(count==1)
+  {
+    
+    document.getElementById("demo").innerHTML = "4 left";;
+  }
+  if(count==2)
+  {
+    
+    document.getElementById("demo").innerHTML = "3 left";;
+  }
+  if(count==3)
+  {
+    
+    document.getElementById("demo").innerHTML = "2 left";;
+  }
+  if(count==4)
+  {
+    
+    document.getElementById("demo").innerHTML = "1 left";;
+  }
+  if(count==5)
+  {
+    
+    document.getElementById("demo").innerHTML = "0 left";;
+  }
   if(count>4)
   {
-    document.addEventListener("click", handler, true);
-    
-function handler(e) {
-  e.stopPropagation();
-  e.preventDefault();
-}
+   
     document.getElementById("demo").innerHTML = "<span style='color: red;'>Only 5 can be selected</span>";;
+    $(".popular-btns").find("*").prop('disabled', true);
+  
+   
+    
     
   }
 }
+
+
 
 
     </script>
