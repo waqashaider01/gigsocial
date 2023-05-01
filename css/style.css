@@ -980,3 +980,79 @@ padding-bottom: 12px;
     border-bottom:2px solid var(--btn1color) !important;
    
 }
+
+
+/* Signup Tabs Style  */
+
+ 
+
+  
+    .tab1 {
+        display: none;
+    }
+
+    #prevBtn {
+        background-color: #bbbbbb;
+    }
+ 
+    .step {
+        height: 5px;
+        width: 30px;
+        margin: 0 2px;
+        background-color: #bbbbbb;
+        border: none;
+border-radius: 5px;
+        display: inline-block;
+        /* opacity: 0.5; */
+    }
+
+    .step.active {
+        opacity: 1;
+    }
+
+  
+    .step.finish {
+        background-color: var(--text);
+    }
+
+
+
+
+
+
+    /* category Start  */
+     .selected-option {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px;
+            background-color:var(--cardtop);
+            border-radius: 30px;
+            color: var(--light);
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+        }
+     
+
+        .close-button {
+            display: inline-block;
+            margin-left: 5px;
+            color: var(--light);
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+
+
+        /* Network Start  */
+
+         .insta-img {
+      opacity: 0.3;
+    }
+   .insta-img:hover,
+    .insta-img.active {
+       opacity: 1;
+       cursor: pointer;
+    }
+
+    /* Network End  */
