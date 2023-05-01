@@ -369,7 +369,7 @@ label #cancel {
 
 /*...................................... Network file css..................... */
 .center-text{
-    margin:0rem 25rem 10rem 25rem;
+    margin:0rem 25rem 0rem 25rem;
     display: flex;
     justify-content: center;
     align-items: center;

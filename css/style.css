@@ -1032,7 +1032,22 @@ border-radius: 5px;
             padding-right: 10px;
             font-size: 14px;
         }
-     
+     .selected-option1  div{
+         display: inline-block;
+            margin-right: 5px;
+            padding: 5px;
+            background-color:var(--cardtop);
+            border-radius: 30px;
+            color: var(--light);
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+     }
+     .audiencebtn{
+         border-radius: 20px; color: #323643;
+               border: 2px solid #323643;
+               opacity: 0.6;
+     }
 
         .close-button {
             display: inline-block;

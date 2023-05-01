@@ -118,8 +118,9 @@
 
 
 
-    <form id="regForm" class="text-center" action="/action_page.php">
+   <div id="regForm" class="text-center" >
 
+  
         <div class="influence_main">
             <!-- One "tab1" for each step in the form: -->
 
@@ -296,257 +297,173 @@
                 </div>
 
             </div>
-            <div class="tab1">
-
-              <!-- Audience Start  -->
-
-<div class="center-text">
-    <h5 style=" color: #5b00db;">YOUR AUDIENCE INTERESTS</h5>
-    <h5 style="text-align: center;">Add some keywords that best describe your audience interests.</h5>
-
-    <input type="text" class="form-control form-cntl" placeholder="Tap to select" ">
-   
-   
-    <div class=" right" style="display: flex; justify-content: space-between; align-items: center;">
-
-
-    <h4 style="color:#323643 !important">Selected</h4>
-    <h4 id="demo">5 left</h4>
-</div>
-<div class="right"
-    style=" max-width: 100%; flex-flow:row wrap;  display: flex; justify-content: left; align-items: center;">
-
-
-    <button class="btn-dark btn  " id="tato" onclick="removefans()"
-        style="display:flex;border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">onlyfans<svg width="14px"
-            height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary">
-            <title>Combined Shape</title>
-            <g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                stroke-linejoin="round">
-                <g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF"
-                    stroke-width="2">
-                    <path
-                        d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118"
-                        id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg></button>
-    <button class="btn-dark btn  " onclick="removeucf()" id="ufc"
-        style="display:flex; border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">UFC<svg width="14px"
-            height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary">
-            <title>Combined Shape</title>
-            <g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                stroke-linejoin="round">
-                <g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF"
-                    stroke-width="2">
-                    <path
-                        d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118"
-                        id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg></button>
-    <button class="btn-dark btn  " onclick="removetravels()" id="tavel"
-        style="display:flex; border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">travels<svg width="14px"
-            height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary">
-            <title>Combined Shape</title>
-            <g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                stroke-linejoin="round">
-                <g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF"
-                    stroke-width="2">
-                    <path
-                        d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118"
-                        id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg></button>
-    <button class="btn-dark btn  " onclick="removerelation()" id="tato3"
-        style="display:flex; border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">Relations<svg width="14px"
-            height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary">
-            <title>Combined Shape</title>
-            <g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                stroke-linejoin="round">
-                <g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF"
-                    stroke-width="2">
-                    <path
-                        d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118"
-                        id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg></button>
-    <button class="btn-dark btn  " onclick="removefitnes()" id="tato4"
-        style="display:flex; border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">fitness<svg width="14px"
-            height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary">
-            <title>Combined Shape</title>
-            <g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                stroke-linejoin="round">
-                <g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF"
-                    stroke-width="2">
-                    <path
-                        d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118"
-                        id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg></button>
-
-    <button class="btn-dark btn  " id="entertaiment1" onclick="removentertainment()"
-        style="display:flex; border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">entertainment<svg width="14px"
-            height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary">
-            <title>Combined Shape</title>
-            <g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                stroke-linejoin="round">
-                <g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF"
-                    stroke-width="2">
-                    <path
-                        d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118"
-                        id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg></button>
-
-
-    <button class="btn-dark btn  " id="tato5" onclick="removemodeling()"
-        style="display:flex; border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">Modeling<svg width="14px"
-            height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary">
-            <title>Combined Shape</title>
-            <g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                stroke-linejoin="round">
-                <g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF"
-                    stroke-width="2">
-                    <path
-                        d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118"
-                        id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg></button>
-    <button class="btn-dark btn  " id="tato7" onclick="removetwitch()"
-        style=" display:flex; border-radius: 20px; padding:0.3rem 1.5rem 0.3rem 1.5rem;">Twitch<svg width="14px"
-            height="14px" viewBox="0 0 14 14" version="1.1" class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary">
-            <title>Combined Shape</title>
-            <g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                stroke-linejoin="round">
-                <g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF"
-                    stroke-width="2">
-                    <path
-                        d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118"
-                        id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg></button>
-
-    <button class="btn-dark btn  " id="tato1" onclick="removeinsta()"
-        style=" display:flex; border-radius: 20px; justify-content: center; padding:0.3rem 1.5rem 0.3rem 1.5rem;">instagram<svg
-            width="14px" height="14px" viewBox="0 0 14 14" version="1.1"
-            class="MuiChip-deleteIcon MuiChip-deleteIconColorSecondary">
-            <title>Combined Shape</title>
-            <g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-                stroke-linejoin="round">
-                <g id="icons/Navigation/Close-Arrow-White" transform="translate(-5.000000, -5.000000)" stroke="#FFFFFF"
-                    stroke-width="2">
-                    <path
-                        d="M17.6470588,6.35294118 L6.35294118,17.6470588 M17.6470588,17.6470588 L6.35294118,6.35294118"
-                        id="Combined-Shape"></path>
-                </g>
-            </g>
-        </svg></button>
-
-
-
-
-
-
-</div>
-<div class="popular-humna"
-    style="margin-top: 3rem;width:100%; display: flex; justify-content: left; flex-direction: column;">
-    <h4 style="margin-bottom: 10px;
-  font-size: 16px;
-  color: #323643;
-       font-weight: 600;
-">Popular</h4>
-
-    <div class="scroolbar" id="disableclick" style="overflow: scroll !important; ">
-        <div class="popular-btns" style="display: flex; justify-content: left; flex-flow: row wrap; ">
-
-            <button id="onlyfans" onclick="showcontent()" class=" btn" style=" border-radius: 20px; color: #323643;
-     border: 2px solid #323643;
-     opacity: 0.6;">onlyfans</button>
-            <button class=" btn" style="  border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;" onclick="showcontent1()" id="insta">instagram</button> <button class=" btn" style=" border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;" onclick="showcontent2()" id="model">Modeling</button>
-            <button class=" btn" onclick="showcontent3()" id="relationship" style=" border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">Reltionships</button>
-            <button class=" btn" onclick="showcontent4()" id="travels" style=" border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">Travels</button>
-
-
-            <button class=" btn" style="  border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;" onclick="showcontent6()" id="twitch">Twitch</button>
-            <button class=" btn" id="fit" onclick="showfit()" style=" border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">fitness</button>
-            <button onclick="showucf()" id="ufc2" class=" btn" style=" border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">UFC</button>
-
-            <button onclick="showentertainment()" id="tain" class=" btn" style=" border-radius: 20px; color: #323643;
-   border: 2px solid #323643;
-   opacity: 0.6;">Entertainment</button>
-
-
-
-        </div>
-
-
-
-
-    </div>
-
-
-
-</div>
-<div class="right" style="display: flex; justify-content: left; align-items: center;">
-    <h4 style="margin-bottom: 22px;
-  font-size: 16px;
-  color: #323643 !important;
-       font-weight: 600;">Your Audience Gender</h4>
-</div>
-
-
-
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="c_width">
-            <nav class="c_nav">
-                <div class="nav custom_nav d-flex justify-content-center" id="nav-tab" role="tablist">
-                    <a href="#" class="custom_nav active d-flex justify-content-center" id="nav-home-tab"
-                        data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
-                        aria-controls="nav-home" aria-selected="true">Mostly
-                        Females</a>
-                    <a href="#" class="custom_nav" id="nav-profile-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                        aria-selected="false">Mostly Males</a>
-                    <div class="animation start-home"></div>
+            <div class="tab1"> 
+            <div class="center-text">
+                <h5 style=" color: #5b00db;" class="my-5">YOUR AUDIENCE INTERESTS</h5>
+                <h5 style="text-align: center;">Add some keywords that best describe your audience interests.</h5>
+            
+                <input type="text" class="form-control form-cntl" placeholder="Tap to select"  id="inputField1233456">
+               
+               
+                <div class=" right" style="display: flex; justify-content: space-between; align-items: center;">
+            
+            
+                <h4 style="color:#323643 !important">Selected</h4>
+                <h4 id="limit12Div">5 left</h4>
+            </div>
+             
+            <div class="right selected-option1"
+                style=" max-width: 100%; flex-flow:row wrap;  display: flex; justify-content: left; align-items: center;" id="selectedContainer1234"></div>
+            
+            <div class="popular-humna"
+                style="margin-top: 3rem;width:100%; display: flex; justify-content: left; flex-direction: column;">
+                <h4 style="margin-bottom: 10px;
+              font-size: 16px;
+              color: #323643;
+                   font-weight: 600;
+            ">Popular</h4>
+            
+                <div class="scroolbar" id="disableclick" style="overflow: scroll !important; ">
+                    <div class="popular-btns" style="display: flex; justify-content: left; flex-flow: row wrap; ">
+            
+            <div id="buttonContainer">
+                <button type="button"  class=" btn audiencebtn"   onclick="handleButtonClick(this)">only fans</button>
+                <button type="button"  class=" btn audiencebtn"  onclick="handleButtonClick(this)">Modeling</button>
+                <button type="button"  class=" btn audiencebtn"  onclick="handleButtonClick(this)">Relationships</button>
+                <button type="button"  class=" btn audiencebtn"  onclick="handleButtonClick(this)">Fitness</button>
+                <button type="button"  class=" btn audiencebtn"    onclick="handleButtonClick(this)">Twitch</button>
+                <button type="button"  class=" btn audiencebtn"   onclick="handleButtonClick(this)">Ufc</button>
+            
+            </div>
+            
+            
+                    </div>
+            
+            
+            
+            
                 </div>
-            </nav>
-
+            
+            
+            
+            </div>
+            <div class="right" style="display: flex; justify-content: left; align-items: center;">
+                <h4 style="margin-bottom: 22px;
+              font-size: 16px;
+              color: #323643 !important;
+                   font-weight: 600;">Your Audience Gender</h4>
+            </div>
+            
+            
+            
+            <div class="contain12er ">
+                <div class="row justify-content-center">
+                    <div class="c_width">
+                        <nav class="c_nav">
+                            <div class="nav custom_nav d-flex justify-content-center" id="nav-tab" role="tablist">
+                                <a href="#" class="custom_nav active d-flex justify-content-center" id="nav-home-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
+                                    aria-controls="nav-home" aria-selected="true">Mostly
+                                    Females</a>
+                                <a href="#" class="custom_nav" id="nav-profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">Mostly Males</a>
+                                <!-- <div class="animation start-home"></div> -->
+                            </div>
+                        </nav>
+            
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        <div class="tab1">
+            <div class="center-text">
+                <h5 style=" color: #5b00db;" class="my-5">YOUR EXPERIENCE</h5>
+                <h5 style="text-align: center;">List some products that you have good results selling.</h5>
+        
+                <input type="text" class="form-control form-cntl" placeholder="Tap to select" id="inputField1233456ex">
+        
+        
+                <div class=" right" style="display: flex; justify-content: space-between; align-items: center;">
+        
+        
+                    <h4 style="color:#323643 !important">Selected</h4>
+                    <h4 id="limit12exDivex">5 left</h4>
+                </div>
+        
+                <div class="right selected-option1"
+                    style=" max-width: 100%; flex-flow:row wrap;  display: flex; justify-content: left; align-items: center;"
+                    id="selectedContainer1234ex"></div>
+        
+                <div class="popular-humna"
+                    style="margin-top: 3rem;width:100%; display: flex; justify-content: left; flex-direction: column;">
+                    <h4 style="margin-bottom: 10px;
+                                      font-size: 16px;
+                                      color: #323643;
+                                           font-weight: 600;
+                                    ">Popular</h4>
+        
+                    <div class="scroolbar" id="disableclick" style="overflow: scroll !important; ">
+                        <div class="popular-btns" style="display: flex; justify-content: left; flex-flow: row wrap; ">
+        
+                            <div id="buttonContainer">
+                                <button type="button" class=" btn audiencebtn" onclick="handleButtonClick12(this)">only
+                                    fans</button>
+                                <button type="button" class=" btn audiencebtn"
+                                    onclick="handleButtonClick12(this)">Modeling</button>
+                                <button type="button" class=" btn audiencebtn"
+                                    onclick="handleButtonClick12(this)">Relationships</button>
+                                <button type="button" class=" btn audiencebtn"
+                                    onclick="handleButtonClick12(this)">Fitness</button>
+                                <button type="button" class=" btn audiencebtn"
+                                    onclick="handleButtonClick12(this)">Twitch</button>
+                                <button type="button" class=" btn audiencebtn" onclick="handleButtonClick12(this)">Ufc</button>
+        
+                            </div>
+        
+        
+                        </div>
+        
+        
+        
+        
+                    </div>
+        
+        
+        
+                </div>
+                <div class="right" style="display: flex; justify-content: left; align-items: center;">
+                    <h4 style="margin-bottom: 22px;
+                                      font-size: 16px;
+                                      color: #323643 !important;
+                                           font-weight: 600;">Your Audience Gender</h4>
+                </div>
+        
+        
+        
+                <div class="contain12er ">
+                    <div class="row justify-content-center">
+                        <div class="c_width">
+                            <nav class="c_nav">
+                                <div class="nav custom_nav d-flex justify-content-center" id="nav-tab" role="tablist">
+                                    <a href="#" class="custom_nav active d-flex justify-content-center" id="nav-home-tab"
+                                        data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
+                                        aria-controls="nav-home" aria-selected="true">Mostly
+                                        Females</a>
+                                    <a href="#" class="custom_nav" id="nav-profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                        aria-selected="false">Mostly Males</a>
+                                    <!-- <div class="animation start-home"></div> -->
+                                </div>
+                            </nav>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-              <!-- Audience End  -->
-
-            </div>
-            <div class="tab1">
-
-
-                Login Info:
-
-            </div>
         </div>
         <div style="overflow:auto;">
             <div>
@@ -555,8 +472,6 @@
 
                 <button type="button" id="nextBtn" onclick="nextPrev(1)"
                     class="mt-3      getstartbtn signupbtns w-25  ">Next</button>
-
-
             </div>
             <div class="mt-5" style="text-align:center; background-color: white; cursor: pointer;" id="prevBtn"
                 onclick="nextPrev(-1)">
@@ -571,16 +486,11 @@
         <!-- Circles which indicates the steps of the form: -->
 
 
-
-    </form>
-
+</div>
 
 
 
-    <!--################> Footer Start <############## -->
-
-
-    <!--################> Footer End  <############## -->
+ 
     <script>
         var currenttab1 = 0; // Current tab1 is set to be the first tab1 (0)
         showtab1(currenttab1); // Display the current tab1
@@ -624,20 +534,9 @@
         }
 
         function validateForm() {
-            // This function deals with validation of the form fields
+            
             var x, y, i, valid = true;
-            x = document.getElementsByClassName("tab1");
-            y = x[currenttab1].getElementsByTagName("input");
-            // A loop that checks every input field in the current tab1:
-            for (i = 0; i < y.length; i++) {
-                // If a field is empty...
-                if (y[i].value == "") {
-                    // add an "invalid" class to the field:
-                    y[i].className += " invalid";
-                    // and set the current valid status to false
-                    valid = false;
-                }
-            }
+            
             // If the valid status is true, mark the step as finished and valid:
             if (valid) {
                 document.getElementsByClassName("step")[currenttab1].className += " finish";
@@ -741,271 +640,422 @@
 
     <!--#################> Audience Start <############## -->
 
-<script>
-    let count = 0;
+    <script>
+        let count = 0;
 
-    let entertainment = document.querySelector("#entertaiment1");
-    entertainment.style.display = "none"
-    let tain = document.querySelector("#tain");
-    function showentertainment() {
-        entertainment.style.display = "block"
-        tain.style.display = "none";
-        count++;
-        check();
-
-
-    }
-
-    function removentertainment() {
+        let entertainment = document.querySelector("#entertaiment1");
+        entertainment.style.display = "none"
+        let tain = document.querySelector("#tain");
+        function showentertainment() {
+            entertainment.style.display = "block"
+            tain.style.display = "none";
+            count1++;
+            check();
 
 
-        entertainment.style.display = "none";
-        tain.style.display = "block";
-        count--;
-        check();
+        }
+
+        function removentertainment() {
 
 
-    }
-    let ufc = document.querySelector("#ufc");
-    ufc.style.display = "none";
-    let ufc2 = document.querySelector("#ufc2");
-    function showucf() {
-        ufc.style.display = "block";
-        ufc2.style.display = "none";
-        count++;
-        check()
+            entertainment.style.display = "none";
+            tain.style.display = "block";
+            count1--;
+            check();
 
 
-    }
-    function removeucf() {
-
+        }
+        let ufc = document.querySelector("#ufc");
         ufc.style.display = "none";
-        ufc2.style.display = "block";
-        count--;
-        check()
+        let ufc2 = document.querySelector("#ufc2");
+        function showucf() {
+            ufc.style.display = "block";
+            ufc2.style.display = "none";
+            count1++;
+            check()
+        }
+        function removeucf() {
+
+            ufc.style.display = "none";
+            ufc2.style.display = "block";
+            count1--;
+            check()
 
 
-    }
+        }
 
 
-    let hide = document.querySelector("#tato");
-    hide.style.display = "none";
+        let hide = document.querySelector("#tato");
+        hide.style.display = "none";
 
-    let onlyfans = document.querySelector("#onlyfans");
-    function showcontent() {
-        hide.style.display = " block";
-        onlyfans.style.display = "none"
-
-
-        count++;
-        check();
+        let onlyfans = document.querySelector("#onlyfans");
+        function showcontent() {
+            hide.style.display = " block";
+            onlyfans.style.display = "none"
 
 
-    }
-
-    function removefans() {
-
-        hide.style.display = " none";
-        onlyfans.style.display = "block"
-        count--;
-        check();
-        ;
+            count1++;
+            check();
 
 
-    }
+        }
+
+        function removefans() {
+
+            hide.style.display = " none";
+            onlyfans.style.display = "block"
+            count--;
+            check();
+            ;
+
+
+        }
 
 
 
-    let hiden1 = document.querySelector("#tato1");
-    hiden1.style.display = "none";
-
-    let hide3 = document.querySelector("#insta");
-    function showcontent1() {
-        hiden1.style.display = "block";
-        hide3.style.display = "none";
-        count++;
-        check();
-
-
-    }
-    function removeinsta() {
-
+        let hiden1 = document.querySelector("#tato1");
         hiden1.style.display = "none";
-        hide3.style.display = "block";
-        count--
-        check();
-    }
 
-    let hiden5 = document.querySelector("#tato5");
-    hiden5.style.display = "none";
+        let hide3 = document.querySelector("#insta");
+        function showcontent1() {
+            hiden1.style.display = "block";
+            hide3.style.display = "none";
+            count1++;
+            check();
 
-    let hide4 = document.querySelector("#model");
-
-    function showcontent2() {
-        hiden5.style.display = " block";
-        hide4.style.display = "none";
-        count++;
-        check();
-
-
-    }
-    function removemodeling() {
-
-        hiden5.style.display = " none";
-        hide4.style.display = "block";
-        count--;
-        check();
-    }
-
-
-    let hiden2 = document.querySelector("#tavel");
-    hiden2.style.display = "none";
-    let hide5 = document.querySelector("#travels");
-    function showcontent4() {
-        hiden2.style.display = "block";
-        hide5.style.display = "none";
-        count++;
-        check();
-
-
-
-    }
-    function removetravels() {
-
-        hiden2.style.display = " none";
-        hide5.style.display = "block";
-        count--;
-        check();
-
-    }
-
-
-    let hiden4 = document.querySelector("#tato4");
-    hiden4.style.display = "none";
-
-    let hide0 = document.querySelector("#fit");
-
-    function showfit() {
-        hiden4.style.display = "block";
-        hide0.style.display = "none";
-        count++;
-        check();
-
-
-    }
-    function removefitnes() {
-
-        hiden4.style.display = " none";
-        hide0.style.display = "block";
-        count--;
-        check();
-    }
-
-
-
-    let hiden3 = document.querySelector("#tato3");
-    hiden3.style.display = "none";
-
-    let hide6 = document.querySelector("#relationship");
-
-    function showcontent3() {
-        hiden3.style.display = "block";
-        hide6.style.display = "none";
-        count++;
-        check();
-
-
-    }
-    function removerelation() {
-
-        hiden3.style.display = " none";
-        hide6.style.display = "block";
-        count--;
-        check();
-    }
-
-    let hiden7 = document.querySelector("#tato7");
-    hiden7.style.display = "none";
-    let hide8 = document.querySelector("#twitch");
-    function showcontent6() {
-        hiden7.style.display = "block";
-        hide8.style.display = "none";
-        count++;
-        check();
-
-
-    }
-    function removetwitch() {
-
-        hiden7.style.display = " none";
-        hide8.style.display = "block";
-        count--;
-        check();
-    }
-
-    let hide7 = document.querySelector("#tain");
-
-    let ucf9 = document.querySelector("#ufc");
-
-
-
-    function showcontent5() {
-        hiden5.style.display = "block";
-        hide7.style.display = "none";
-
-    }
-
-    function showcontent7() {
-        hiden7.style.display = "block";
-        hide7.style.display = "none";
-
-    }
-    function check() {
-        if (count == 1) {
-
-            document.getElementById("demo").innerHTML = "4 left";;
-        }
-        if (count == 2) {
-
-            document.getElementById("demo").innerHTML = "3 left";;
-        }
-        if (count == 3) {
-
-            document.getElementById("demo").innerHTML = "2 left";;
-        }
-        if (count == 4) {
-
-            document.getElementById("demo").innerHTML = "1 left";;
-        }
-        if (count == 5) {
-
-            document.getElementById("demo").innerHTML = "0 left";;
-        }
-        if (count > 4) {
-
-            document.getElementById("demo").innerHTML = "<span style='color: red;'>Only 5 can be selected</span>";;
-            $(".popular-btns").find("*").prop('disabled', true);
-        }
-        else {
-            $(".popular-btns").find("*").prop('disabled', false);
 
         }
+        function removeinsta() {
+
+            hiden1.style.display = "none";
+            hide3.style.display = "block";
+            count1--
+            check();
+        }
+
+        let hiden5 = document.querySelector("#tato5");
+        hiden5.style.display = "none";
+
+        let hide4 = document.querySelector("#model");
+
+        function showcontent2() {
+            hiden5.style.display = " block";
+            hide4.style.display = "none";
+            count1++;
+            check();
+
+
+        }
+        function removemodeling() {
+
+            hiden5.style.display = " none";
+            hide4.style.display = "block";
+            count1--;
+            check();
+        }
+
+
+        let hiden2 = document.querySelector("#tavel");
+        hiden2.style.display = "none";
+        let hide5 = document.querySelector("#travels");
+        function showcontent4() {
+            hiden2.style.display = "block";
+            hide5.style.display = "none";
+            count1++;
+            check();
+
+
+
+        }
+        function removetravels() {
+
+            hiden2.style.display = " none";
+            hide5.style.display = "block";
+            count1--;
+            check();
+
+        }
+
+
+        let hiden4 = document.querySelector("#tato4");
+        hiden4.style.display = "none";
+
+        let hide0 = document.querySelector("#fit");
+
+        function showfit() {
+            hiden4.style.display = "block";
+            hide0.style.display = "none";
+            count1++;
+            check();
+
+
+        }
+        function removefitnes() {
+
+            hiden4.style.display = " none";
+            hide0.style.display = "block";
+            count1--;
+            check();
+        }
+
+
+
+        let hiden3 = document.querySelector("#tato3");
+        hiden3.style.display = "none";
+
+        let hide6 = document.querySelector("#relationship");
+
+        function showcontent3() {
+            hiden3.style.display = "block";
+            hide6.style.display = "none";
+            count1++;
+            check();
+
+
+        }
+        function removerelation() {
+
+            hiden3.style.display = " none";
+            hide6.style.display = "block";
+            count1--;
+            check();
+        }
+
+        let hiden7 = document.querySelector("#tato7");
+        hiden7.style.display = "none";
+        let hide8 = document.querySelector("#twitch");
+        function showcontent6() {
+            hiden7.style.display = "block";
+            hide8.style.display = "none";
+            count1++;
+            check();
+
+
+        }
+        function removetwitch() {
+
+            hiden7.style.display = " none";
+            hide8.style.display = "block";
+            count1--;
+            check();
+        }
+
+        let hide7 = document.querySelector("#tain");
+
+        let ucf9 = document.querySelector("#ufc");
+
+
+
+        function showcontent5() {
+            hiden5.style.display = "block";
+            hide7.style.display = "none";
+
+        }
+
+        function showcontent7() {
+            hiden7.style.display = "block";
+            hide7.style.display = "none";
+
+        }
+        function check() {
+            if (count == 1) {
+
+                document.getElementById("demo").innerHTML = "4 left";;
+            }
+            if (count == 2) {
+
+                document.getElementById("demo").innerHTML = "3 left";;
+            }
+            if (count == 3) {
+
+                document.getElementById("demo").innerHTML = "2 left";;
+            }
+            if (count == 4) {
+
+                document.getElementById("demo").innerHTML = "1 left";;
+            }
+            if (count == 5) {
+
+                document.getElementById("demo").innerHTML = "0 left";;
+            }
+            if (count > 4) {
+
+                document.getElementById("demo").innerHTML = "<span style='color: red;'>Only 5 can be selected</span>";;
+                $(".popular-btns").find("*").prop('disabled', true);
+            }
+            else {
+                $(".popular-btns").find("*").prop('disabled', false);
+
+            }
+        }
+    </script>
+
+    <script>
+        const inputField = document.getElementById("input-field");
+        const outputDiv = document.getElementById("output");
+
+        inputField.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                const inputValue = inputField.value;
+                outputDiv.innerHTML += `<p>${inputValue}</p>`;
+                inputField.value = "";
+            }
+        });
+    </script>
+
+
+
+
+<!-- Script For Audience  -->
+
+
+ <script>
+    var limit12 = 5;
+    var selectedCount123 = 0;
+
+    function updatelimit12() {
+        var limit12Div = document.getElementById("limit12Div");
+        limit12Div.textContent = (limit12 - selectedCount123) + "Left.";
     }
-</script>
 
-<script>
-    const inputField = document.getElementById("input-field");
-    const outputDiv = document.getElementById("output");
+    function handleButtonClick(button) {
+        if (selectedCount123 >= limit12) {
+            var limit12Div = document.getElementById("limit12Div");
+            limit12Div.textContent = (limit12 - selectedCount123) + "Left";
+            return;
+        }
 
-    inputField.addEventListener("keydown", function (event) {
+        var selectedContainer1234 = document.getElementById("selectedContainer1234");
+        var selectedDiv = document.createElement("div");
+        selectedDiv.textContent = button.textContent;
+        selectedContainer1234.appendChild(selectedDiv);
+
+        button.style.display = "none";
+        selectedCount123++;
+
+        var closeButton123123 = document.createElement("span");
+        closeButton123123.className = "close-button";
+        closeButton123123.textContent = "X";
+        selectedDiv.appendChild(closeButton123123);
+        closeButton123123.onclick = function () {
+            button.style.display = "";
+            selectedContainer1234.removeChild(selectedDiv);
+            selectedCount123--;
+            updatelimit12();
+        };
+
+        updatelimit12();
+    }
+
+    var inputField1233456 = document.getElementById("inputField1233456");
+    inputField1233456.addEventListener("keyup", function (event) {
         if (event.key === "Enter") {
-            const inputValue = inputField.value;
-            outputDiv.innerHTML += `<p>${inputValue}</p>`;
-            inputField.value = "";
+            if (selectedCount123 >= limit12) {
+                var limit12Div = document.getElementById("limit12Div");
+                limit12Div.textContent = (limit12 - selectedCount123) + "Left.";
+                return;
+            }
+
+            var selectedContainer1234 = document.getElementById("selectedContainer1234");
+            var selectedDiv = document.createElement("div");
+            selectedDiv.textContent = inputField1233456.value;
+            selectedContainer1234.appendChild(selectedDiv);
+
+            inputField1233456.value = "";
+            selectedCount123++;
+
+            var closeButton123123 = document.createElement("span");
+            closeButton123123.className = "close-button";
+            closeButton123123.textContent = "X";
+            selectedDiv.appendChild(closeButton123123);
+            closeButton123123.onclick = function () {
+                selectedContainer1234.removeChild(selectedDiv);
+                selectedCount123--;
+                updatelimit12();
+            };
+
+            updatelimit12();
         }
     });
+
 </script>
 
+
+<!-- Experience  -->
+
+<script>
+    var limit12ex = 5;
+    var selectedCount123ex = 0;
+
+    function updatelimit12exex() {
+        var limit12exDivex = document.getElementById("limit12exDivex");
+        limit12exDivex.textContent = (limit12ex - selectedCount123ex) + "Left.";
+    }
+
+    function handleButtonClick12(button) {
+        if (selectedCount123ex >= limit12ex) {
+            var limit12exDivex = document.getElementById("limit12exDivex");
+            limit12exDivex.textContent = (limit12ex - selectedCount123ex) + "Left";
+            return;
+        }
+
+        var selectedContainer1234ex = document.getElementById("selectedContainer1234ex");
+        var selectedDivex = document.createElement("div");
+        selectedDivex.textContent = button.textContent;
+        selectedContainer1234ex.appendChild(selectedDivex);
+
+        button.style.display = "none";
+        selectedCount123ex++;
+
+        var closeButton123123ex = document.createElement("span");
+        closeButton123123ex.className = "close-button";
+        closeButton123123ex.textContent = "X";
+        selectedDivex.appendChild(closeButton123123ex);
+        closeButton123123ex.onclick = function () {
+            button.style.display = "";
+            selectedContainer1234ex.removeChild(selectedDivex);
+            selectedCount123ex--;
+            updatelimit12exex();
+        };
+
+        updatelimit12exex();
+    }
+
+    var inputField1233456ex = document.getElementById("inputField1233456ex");
+    inputField1233456ex.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+            if (selectedCount123ex >= limit12ex) {
+                var limit12exDivex = document.getElementById("limit12exDivex");
+                limit12exDivex.textContent = (limit12ex - selectedCount123ex) + "Left.";
+                return;
+            }
+
+            var selectedContainer1234ex = document.getElementById("selectedContainer1234ex");
+            var selectedDivex = document.createElement("div");
+            selectedDivex.textContent = inputField1233456ex.value;
+            selectedContainer1234ex.appendChild(selectedDivex);
+
+            inputField1233456ex.value = "";
+            selectedCount123ex++;
+
+            var closeButton123123ex = document.createElement("span");
+            closeButton123123ex.className = "close-button";
+            closeButton123123ex.textContent = "X";
+            selectedDivex.appendChild(closeButton123123);
+            closeButton123123.onclick = function () {
+                selectedContainer1234ex.removeChild(selectedDivex);
+                selectedCount123ex--;
+                updatelimit12exex();
+            };
+
+            updatelimit12exex();
+        }
+    });
+
+</script>
+
+
+ 
     <!------ JS libraries ------>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
