@@ -874,8 +874,14 @@ label #cancel {
 }
 
 
-
-
+.right button{
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+.popular-btns button{
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 
 /*      ...................audience apge...................... */
 
@@ -1060,4 +1066,7 @@ label #cancel {
     margin-bottom: 20px;
     flex-direction: column;
     vertical-align: top;
+}
+.popular-btns button{
+    margin-bottom: 0.5rem;
 }
