@@ -1,166 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/mystyle.css">
-    <title>Document</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <title>Document</title>
+
 </head>
+
 <body>
-   <div class="center-text">
-    <h5 style=" color: #5b00db;">PROFILE INFO</h5>
-    <h5 style="text-align: center;">We need a bit more information to match you with advertisers.</h5>
-   <div class="circle" style="position: relative;
-   display: -moz-box;
-   display: flex;
-   -moz-box-orient: vertical;
-   -moz-box-direction: normal;
-   flex-direction: column;
-   -moz-box-align: center;
-   align-items: center;
-   z-index: 2;
-   border-radius: 50%; width: 80px;
-    height: 80px;
-    color: #fafafa;
-    background-color: #bdbdbd;display: flex;
-    overflow: hidden;
-    position: relative;
-    font-size: 1.25rem;
-    align-items: center;
-    flex-shrink: 0;
-    font-family: Avenir Roman;
-    line-height: 1;
-    user-select: none;
-    border-radius: 50%;
-    justify-content: center;">
-<div class="inner-circle" style="position: absolute;
-top: 50%;
-left: 50%;
--webkit-transform: translate(-50%,-50%);
-transform: translate(-50%,-50%);background-color: rgba(0,0,0,.7);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;">
-    <svg style=" position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);"width="24" height="24" alt="Plus Sign" viewBox="0 0 17 17" version="1.1"><title>Group</title><g id="//-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="icons/Navigation/Add" transform="translate(-4.000000, -3.000000)" stroke="#FFFFFF" stroke-width="2"><g id="Group" transform="translate(5.500000, 4.919242)"><line x1="7" y1="0" x2="7" y2="14" id="Line-2-Copy-4"></line><line x1="7" y1="0.0807577268" x2="7" y2="14.0807577" id="Line-2-Copy-4" transform="translate(7.000000, 7.080758) rotate(-90.000000) translate(-7.000000, -7.080758) "></line></g></g></g></svg>
+  <div class="center-text">
+    <h5>PROFILE INFO</h5>
+    <h5 style="text-align: center;  color: #323643;">We need a bit more information to match you with advertisers.</h5>
 
-</div>
-   </div>
-    
-   
+    <div class="profileimage">
+      <div class="profile-pic-div">
+        <img src="./images/image.jpg" id="photo">
+        <input type="file" id="file">
+        <label for="file" id="uploadBtn">Choose Photo</label>
+      </div>
+    </div>
+
+
+
     <div class="center">
-      <h4 style="margin-bottom: 10px; margin-top: 1rem;
-      font-size: 16px;
-      color: #323643;
-           font-weight: 600;">Add your Avatar (required)</h4>
+      <h4>Add your Avatar (required)</h4>
     </div>
-    <div class="parent-form" style="width:100%;display: flex !important; flex-direction: column; justify-content: left; ">
-      <h4 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated" style="margin-top: 30px;font-size: 16px;
-      color: #323643;
-      font-weight: 600;
-      
-    
-      line-height: 1.25;
-      display: block;
-     
-      margin-bottom: 5px;
-      transform-origin: top left;">Display Name (Name of your page)</h4>
-        
-        <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart" style="border: 1px solid #c8ccd9; margin-top: 1rem;"><div class="MuiInputAdornment-root MuiInputAdornment-positionStart" style="border:1px solid #c8ccd9 !important;"><svg style="margin-left:1rem" width="14" height="16px" viewBox="0 0 16 16" version="1.1"><title>icons/field/user</title><g id="icons/field/user" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M12.1076425,12.4319209 C9.77979555,11.9869428 9.77302516,11.2646122 9.77302516,10.7976887 L9.77302516,10.0557473 C10.6230593,9.29676322 11.1800991,8.03443561 11.1800991,6.60308169 L11.1800991,6.13615822 L11.1800991,4.36184902 C11.1800991,1.93384695 9.45925259,1 7.91163473,1 C6.36495072,1 4.64317041,1.93384695 4.64317041,4.36184902 L4.64317041,6.13615822 L4.64317041,6.60308169 C4.64317041,8.03070022 5.19857588,9.28999283 6.04487468,10.0494439 L6.04487468,10.7976887 C6.04487468,11.2646122 6.04440776,12.0088882 3.71025731,12.4319209 C1.41299381,12.8481832 1,15 1,15 L14.8178998,15 C14.8178998,15 14.4002368,12.8698951 12.1076425,12.4319209 Z" id="Stroke-1" stroke="#5B00DB"></path></g></svg></div><input aria-invalid="false" name="display_name" placeholder="Display Name (Name of your page)" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart" value="Anika Woodward"><fieldset aria-hidden="true" class="jss5 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;"><legend class="jss6" style="width: 0.01px;"><span>​</span></legend></fieldset></div>
-        
+    <div class="parent-form">
+      <h4 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated">Display Name (Name of your page)</h4>
+
+      <div
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"
+        style="border: 1px solid #c8ccd9; margin-top: 1rem;">
+        <div class="MuiInputAdornment-root MuiInputAdornment-positionStart"
+          style="border:1px solid #c8ccd9 !important;"><svg style="margin-left:1rem" width="14" height="16px"
+            viewBox="0 0 16 16" version="1.1">
+            <title>icons/field/user</title>
+            <g id="icons/field/user" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12.1076425,12.4319209 C9.77979555,11.9869428 9.77302516,11.2646122 9.77302516,10.7976887 L9.77302516,10.0557473 C10.6230593,9.29676322 11.1800991,8.03443561 11.1800991,6.60308169 L11.1800991,6.13615822 L11.1800991,4.36184902 C11.1800991,1.93384695 9.45925259,1 7.91163473,1 C6.36495072,1 4.64317041,1.93384695 4.64317041,4.36184902 L4.64317041,6.13615822 L4.64317041,6.60308169 C4.64317041,8.03070022 5.19857588,9.28999283 6.04487468,10.0494439 L6.04487468,10.7976887 C6.04487468,11.2646122 6.04440776,12.0088882 3.71025731,12.4319209 C1.41299381,12.8481832 1,15 1,15 L14.8178998,15 C14.8178998,15 14.4002368,12.8698951 12.1076425,12.4319209 Z"
+                id="Stroke-1" stroke="#5B00DB"></path>
+            </g>
+          </svg></div><input aria-invalid="false" name="display_name" placeholder="Display Name (Name of your page)"
+          type="text"
+          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"
+          value="Anika Woodward">
+        <fieldset aria-hidden="true" class="jss5 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;">
+          <legend class="jss6" style="width: 0.01px;"><span>​</span></legend>
+        </fieldset>
+      </div>
+
+
+      <h4 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated">What do you identify as <span
+          class="light">(required) </span></h4>
+      <div class="form-group">
+
+        <select class="form-control" id="sel1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+
+      <h4 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated">Date of birth <span
+          class="light">(required) (not shown to anyone)</span></h4>
+      <input type="date" id="birthday" name="birthday" class="birthday" placeholder="MM/DD/YY">
+
+
+      <h4 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated">Location <span class="light">(required)
+        </span></h4>
+      <div class="form-group">
+
+        <select class="form-control" class="birthday" id="sel1" placeholder="location">
+          <option value="" selected disabled>location</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+
+
+      <h4 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated">Bio <span class="light">(required) </span>
+      </h4>
+
+
+      <textarea class="form-control" class="textarea" style="margin-bottom: 1rem;"
+        placeholder="write something about yourself" id="exampleFormControlTextarea1" rows="3"></textarea>
+
     </div>
-    
-<div class="popular-humna" style="margin-top: 3rem;width:100%; display: flex; justify-content: left; flex-direction: column;">
-  <h4 style="margin-bottom: 10px;
-  font-size: 16px;
-  color: #323643;
-       font-weight: 600;
-">Popular</h4>
 
-<div class="scroolbar" style="overflow: scroll !important; ">
-  <div class="popular-btns" style="display: flex; justify-content: space-evenly; ">
-    <button  class=" btn" style="color: #323643;
-    border: 2px solid #323643; border-radius: 20px;
-    opacity: 0.6;">onlyfans</button> <button  class=" btn" style="  border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">instagram</button> <button  class=" btn" style=" border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">Modeling</button>
-    <button  class=" btn" style=" border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">Reltionships</button>
-    <button  class=" btn" style=" border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">Travels</button>
-   
-  </div>
-  <div class="popular-btns" style="margin-top:1.5rem;display: flex; justify-content: space-evenly; ">
-    <button  class=" btn" style="color: #323643;
-    border: 2px solid #323643; border-radius: 20px;
-    opacity: 0.6;">Entertainment</button> <button  class=" btn" style="  border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">Twitch</button> <button  class=" btn" style=" border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">UCF</button>
-    <button  class=" btn" style=" border-radius: 20px; color: #323643;
-    border: 2px solid #323643;
-    opacity: 0.6;">Reltionships</button>
-   
-   
-  </div>
-</div>
- 
+
+    <div class="right2">
+      <h4 stle="margin-top: 1rem !important">GIG SETTINGS</h4>
+      <h4 style="font-size:0.9rem ;  color: #323643 !important;;">Are you willing to do on-location gigs</h4>
+
+    </div>
 
 
 
-</div>
-<div class="right" style="display: flex; justify-content: left; align-items: center;">
-  <h4 style="margin-bottom: 22px;
-  margin-top:2rem;
-  font-size: 16px;
-  color: #323643 !important;
-       font-weight: 600;">Your Audience Gender</h4>
-</div>
-
-
-
-    <div class="container">
-      <div class="row justify-content-center">
+    <div class="toggle2">
+      <div class="container">
+        <div class="row justify-content-center">
           <div class="c_width">
-              <nav class="c_nav">
-                  <div class="nav custom_nav d-flex justify-content-center" id="nav-tab" role="tablist">
-                      <a href="#" class="custom_nav active d-flex justify-content-center" id="nav-home-tab"
-                          data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
-                          aria-controls="nav-home" aria-selected="true">Mostly Females</a>
-                      <a href="#" class="custom_nav" id="nav-profile-tab" data-bs-toggle="tab"
-                          data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                          aria-selected="false">Mostly Males</a>
-                      <div class="animation start-home"></div>
-                  </div>
-              </nav>
+            <nav class="c_nav">
+              <div class="nav custom_nav d-flex justify-content-center" id="nav-tab" role="tablist">
+                <a href="#" class="custom_nav active d-flex justify-content-center" id="nav-home-tab"
+                  data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                  aria-selected="true">Mostly Females</a>
+                <a href="#" class="custom_nav" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Mostly Males</a>
+                <div class="animation start-home"></div>
+              </div>
+            </nav>
 
           </div>
+        </div>
       </div>
-  </div>
+    </div>
+
   
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-   integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-   crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-   integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-   crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <div class="last-div">
+      <h4 style="font-size:0.9rem ;  color: #323643 !important;;">Are you willing to accept gigs that require aproduct
+        to be shipped to you?</h4>
+
+
+
+
+    </div>
+    <div class="toggle2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="c_width">
+            <nav class="c_nav">
+              <div class="nav custom_nav d-flex justify-content-center" id="nav-tab" role="tablist">
+                <a href="#" class="custom_nav active d-flex justify-content-center" id="nav-home-tab"
+                  data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                  aria-selected="true">Mostly Females</a>
+                <a href="#" class="custom_nav" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Mostly Males</a>
+                <div class="animation start-home"></div>
+              </div>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<script src="./js/profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
