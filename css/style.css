@@ -1071,3 +1071,12 @@ border-radius: 5px;
     }
 
     /* Network End  */
+
+    .model_color_set{
+        background-color: var(--card);
+    }
+
+    .select_option_form{
+    
+         background-color: transparent !important;
+    }
