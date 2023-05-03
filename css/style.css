@@ -15,7 +15,7 @@
     --text:#5b00db;
 
     --influence-bg:#fafafa;
-
+--text_color_link:rgba(18, 223, 199, .9);
     --card:#f2f4f9;
 --cardtop:#323643;
 
@@ -229,6 +229,55 @@
     background-color: rgb(63, 0, 153) !important;
 }
 
+.adveriset_btn{
+    border-radius: 30px;
+    background-color: var(--colorone);
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.adveriset_btn:hover {
+    background-color: rgb(63, 0, 153) !important;
+}
+
+.adveriset_btn_set{
+    position: relative;
+bottom: 50px;
+
+}
+.adveriset_btn_set12{
+    position: relative;
+    bottom: -50px;
+    left: 40px;
+}
+.adveriset_btn_set13{
+     position: relative;
+    bottom: -100px;
+    left: 40px;
+}
+@media(max-width:1200px)
+{
+    .adveriset_btn_set13 {
+    position: relative;
+    bottom: -30px;
+    left: 40px;
+}
+}
+
+@media(max-width:1000px)
+{
+    .adveriset_btn_set13 {
+    position: relative;
+    bottom: -40px;
+    left: 20px;
+}
+.adveriset_btn_set12{
+    position: relative;
+    bottom: -50px;
+    left: 20px;
+}
+}
 .banner_content {
     font-size: 22px;
 }
@@ -280,6 +329,9 @@
     background-color: #eef1f7;
     padding: 40px 0 55px;
     margin-top: -1px;
+    /* height: 60vh; */
+
+   
 }
 
 .advertise_icon {
@@ -920,6 +972,16 @@ padding-bottom: 12px;
     transition: all .2s ease-in-out;
     border: none;
 }
+.card_comp_main_nill{
+    height:650px;
+}
+@media(max-width:1000px)
+{
+    .card_comp_main_nill{
+    height:auto;
+    
+}
+}
 .card-comp{
     width: 100%;
     height: 70px;
@@ -929,6 +991,18 @@ padding-bottom: 12px;
     color: var(--card);
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+}
+.card-comp12{
+        width: 100%;
+    height: 150px;
+   
+    background-color:var(--cardtop);
+    color: var(--card);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.card_color_g{
+    color: var(--text_color_link);
 }
  
 .card_com_content{
@@ -1080,3 +1154,153 @@ border-radius: 5px;
     
          background-color: transparent !important;
     }
+
+    .video_setting{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 70% !important;
+    }
+
+    .video_content_main{
+            font-size: 50px;
+    }
+    .video_content_text{
+        font-size: 18px;
+    }
+
+    .activity_bg{
+        background-color: var(--card);
+    }
+
+    @media(max-width:768px)
+    {
+        .video_setting{
+            width: 100% !important;
+        }
+
+         .video_setting1{
+            width: 100% !important;
+        }
+    }
+
+    .arrow1{
+        text-align: center; margin-top: 10px;
+    }
+    .arrow_line{
+        padding-bottom: 100px;
+    }
+
+
+
+    /* Nill Bg Section Start  */
+    .nillbg_main{
+        position: relative;
+    }
+    .nill_text{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        
+    }
+ .nillbg_img{
+
+    width: 100%;
+   height: auto;
+ }
+ .nillcard_main{
+position:  absolute;
+top: 400px;
+left: 7%;
+ }
+ 
+ @media(min-width:1400px)
+ {
+     .nillcard_main{
+position:  absolute;
+top: 400px;
+left: 0%;
+ }
+ }
+ 
+
+
+  @media(max-width:768px)
+ {
+  .nillcard_main{
+position:  absolute;
+top: 250px;
+left: 4%;
+ }
+     .nill_text{
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        
+    }
+ }
+
+
+   @media(max-width:570px)
+ {
+  .nillcard_main{
+position:  absolute;
+top: 250px;
+left: 2%;
+ }
+     .nill_text{
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        
+    }
+ }
+
+   @media(max-width:400px)
+ {
+  
+
+     .nill_text{
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        
+    }
+ }  
+ .nill_card_list{
+    list-style: none;
+ }
+  .nill_card_list li{
+
+    margin-top: 15px;
+  }
+    .nill_card_list li svg{
+
+    padding-right: 15px;
+  }
+
+  .nill_card_body{
+    background-color: var(--cardtop);
+
+    color: var(--light);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .card-img-top{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .nill_card{
+    border-radius: 20px;
+  }
+  
+
+  /* About Start  */
