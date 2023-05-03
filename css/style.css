@@ -1194,6 +1194,7 @@ border-radius: 5px;
     /* Nill Bg Section Start  */
     .nillbg_main{
         position: relative;
+       overflow: auto;
     }
     .nill_text{
         position: absolute;
@@ -1310,7 +1311,6 @@ left: 2%;
   .about_text1{
     text-align: center;
     font-size: 14px;
-
   }
   .about_text1_link{
     text-decoration: none;
